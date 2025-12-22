@@ -40,7 +40,7 @@
         </div>
         <div class="col-lg-6">
             <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-                <img src="{{ asset('porto/simages/about_company.jpg') }}" class="img-fluid rounded shadow-lg" alt="Şirket Hikayesi">
+                <img src="{{ asset('porto/simages/about_company.jpg') }}" class="img-fluid rounded " alt="Şirket Hikayesi">
             </div>
         </div>
     </div>

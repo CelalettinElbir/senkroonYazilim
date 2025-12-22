@@ -6,7 +6,7 @@
 								<div class="header-row">
 									<div class="header-logo mb-0">
 										<a href="index.html">
-											<img alt="Porto" width="123" height="46" src="{{ asset("porto/simages/main.png") }}">
+											<img alt="Porto" width="200" height="50" src="{{ asset("porto/simages/senkronlogo.png") }}">
 										</a>
 									</div>
 								</div>
