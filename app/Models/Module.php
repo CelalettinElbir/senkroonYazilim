@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class Module extends Model
@@ -33,6 +34,14 @@ class Module extends Model
             }
         });
     }
+
+    public function getCoverImageUrlAttribute()
+    {
+        return $this->cover_image
+            ? Storage::disk('public')->url($this->cover_image)
+            : null;
+    }
+
 
     /**
      * Route Model Binding için
