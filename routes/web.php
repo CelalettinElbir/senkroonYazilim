@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdvisorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
 
@@ -28,4 +29,11 @@ Route::prefix('workcube-modulleri')->group(function () {
 Route::prefix('sektorel-uygulamalar')->group(function () {
     Route::get('/', [SectorController::class, 'index'])->name('sectors.index');
     Route::get('/{slug}', [SectorController::class, 'show'])->name('sectors.show');
+});
+
+
+
+Route::prefix("danismanlik-cozumleri")->group(function(){
+    Route::get('/', [AdvisorController::class, 'index'])->name('advisors.index');
+    Route::get('/{slug}', [AdvisorController::class, 'show'])->name('advisors.show');
 });

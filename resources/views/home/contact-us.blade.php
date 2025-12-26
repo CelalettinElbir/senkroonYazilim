@@ -3,17 +3,17 @@
 
 @section('content')
     <section class="page-header page-header-modern section position-relative border-0 m-0"
-        style="background-image: url('porto/simages/2.png'); background-position: center; background-size: cover;">
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
         <div class="container position-relative pb-5 mb-5">
 
 
             <div class="row text-center text-md-start py-2">
                 <div class="col p-relative bottom-5">
-                    <ul class="breadcrumb d-block text-4 opacity-8 text-default mb-0">
-                        <li><a href="{{ route('home.index') }}" class="text-decoration-none text-default">Ana sayfa</a></li>
+                    <ul class="breadcrumb d-block text-4 opacity-8 text-white mb-0">
+                        <li><a href="{{ route('home.index') }}" class="text-decoration-none text-white">Ana sayfa</a></li>
                         <li class="active">İletişim</li>
                     </ul>
-                    <h1 class="font-weight-bold text-color-dark text-10 mt-1 mb-0">İletişim</h1>
+                    <h1 class="font-weight-bold text-color-white text-10 mt-1 mb-0">İletişim</h1>
                 </div>
             </div>
         </div>

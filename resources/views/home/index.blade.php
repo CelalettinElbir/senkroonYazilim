@@ -559,7 +559,7 @@
 
 
 
-    <div class="container py-4 my-5 mb-5" id="news">
+    {{-- <div class="container py-4 my-5 mb-5" id="news">
         <div class="row">
             <div class="col text-center">
                 <h2 class="font-weight-bold line-height-2 text-7 mb-1">Haberler & Blog</h2>
@@ -641,5 +641,5 @@
                     Yazıları Görüntüle</a>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

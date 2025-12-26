@@ -7,8 +7,8 @@
                      <div class="header-row">
                          <div class="header-logo mb-0">
                              <a href="index.html">
-                                 <img alt="Porto" width="200" height="50"
-                                     src="{{ asset('porto/simages/senkronlogo.png') }}">
+                                 <img alt="Porto" width="150" height="60"
+                                     src="{{ asset('porto/simages/senkronlogo2.png') }}">
                              </a>
                          </div>
                      </div>
@@ -134,7 +134,7 @@
                                                                          Çözümleri</div>
                                                                      <a href="{{ url('danismanlik-cozumleri') }}"
                                                                          class="d-block mb-3">
-                                                                         <img src="{{ asset('upload/temp/resim-365851_w200_h200.png') }}"
+                                                                         <img src="{{ asset('images/danismanlik-cozumleri.jpg') }}"
                                                                              alt="Danışmanlık Çözümleri"
                                                                              class="img-fluid rounded mb-2">
                                                                          <p class="text-2 mb-0">ERP + MRP + EĞİTİM +
@@ -153,10 +153,6 @@
                                                                              <li>
                                                                                  <a class="dropdown-item d-flex align-items-center"
                                                                                      href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">
-                                                                                     <img src="{{ asset('upload/temp/resim-537217_w500_h500.jpg') }}"
-                                                                                         width="48"
-                                                                                         class="rounded me-3"
-                                                                                         alt="İdari Danışmanlık">
                                                                                      <span>İdari Danışmanlık
                                                                                          Hizmetleri</span>
                                                                                  </a>
@@ -164,10 +160,7 @@
                                                                              <li>
                                                                                  <a class="dropdown-item d-flex align-items-center"
                                                                                      href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">
-                                                                                     <img src="{{ asset('upload/temp/resim-228928_w500_h500.jpg') }}"
-                                                                                         width="48"
-                                                                                         class="rounded me-3"
-                                                                                         alt="Raporlama ve Analiz">
+
                                                                                      <span>Raporlama ve Analiz
                                                                                          Hizmetleri</span>
                                                                                  </a>
@@ -175,42 +168,27 @@
                                                                              <li>
                                                                                  <a class="dropdown-item d-flex align-items-center"
                                                                                      href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">
-                                                                                     <img src="{{ asset('upload/temp/resim-154591_w500_h500.jpg') }}"
-                                                                                         width="48"
-                                                                                         class="rounded me-3"
-                                                                                         alt="Teknik Destek">
+
                                                                                      <span>Teknik Destek
                                                                                          Hizmetleri</span>
                                                                                  </a>
                                                                              </li>
                                                                              <li>
                                                                                  <a class="dropdown-item d-flex align-items-center"
-                                                                                     href="{{ url('danismanlik-cozumleri/egitim-ve-uygulama-hizmetleri') }}">
-                                                                                     <img src="{{ asset('upload/temp/resim-37329_w500_h500.jpg') }}"
-                                                                                         width="48"
-                                                                                         class="rounded me-3"
-                                                                                         alt="Eğitim ve Uygulama">
-                                                                                     <span>Eğitim ve Uygulama
-                                                                                         Hizmetleri</span>
-                                                                                 </a>
-                                                                             </li>
-                                                                             <li>
-                                                                                 <a class="dropdown-item d-flex align-items-center"
                                                                                      href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">
-                                                                                     <img src="{{ asset('upload/temp/resim-664959_w500_h500.jpg') }}"
-                                                                                         width="48"
-                                                                                         class="rounded me-3"
-                                                                                         alt="ERP MRP">
                                                                                      <span>ERP – MRP Proje
                                                                                          Danışmanlığı</span>
                                                                                  </a>
                                                                              </li>
+                                                                             <a href="{{ url('danismanlik-cozumleri') }}"
+                                                                                 class="btn btn-link text-decoration-none ps-0">
+                                                                                 <i
+                                                                                     class="fas fa-angle-right me-1"></i>
+                                                                                 Tüm Danışmanlık Çözümleri
+                                                                             </a>
+
                                                                          </ul>
-                                                                         <a href="{{ url('danismanlik-cozumleri') }}"
-                                                                             class="btn btn-link text-decoration-none ps-0">
-                                                                             <i class="fas fa-angle-right me-1"></i>
-                                                                             Tüm Danışmanlık Çözümleri
-                                                                         </a>
+
                                                                      </div>
                                                                  </div>
                                                              </div>
@@ -298,16 +276,16 @@
                                                                      <div class="dropdown-mega-sub-nav">
                                                                          <ul class="list list-unstyled">
                                                                              <li><a class="dropdown-item"
-                                                                                     href="{{ route('modules.show', 'workcube-erp') }}">Workcube
+                                                                                     href="{{ route('modules.show', 'erp-satis-satinalma-dagitim-sd-scm') }}">Workcube
                                                                                      ERP</a></li>
                                                                              <li><a class="dropdown-item"
-                                                                                     href="{{ route('modules.show', 'workcube-crm') }}">Workcube
+                                                                                     href="{{ route('modules.show', 'crm-musteri-iliskileri-yonetimi') }}">Workcube
                                                                                      CRM</a></li>
                                                                              <li><a class="dropdown-item"
-                                                                                     href="{{ route('modules.show', 'workcube-hr') }}">Workcube
+                                                                                     href="{{ route('modules.show', 'insan-kaynaklari-ik') }}">Workcube
                                                                                      HR</a></li>
                                                                              <li><a class="dropdown-item"
-                                                                                     href="{{ route('modules.show', 'workcube-pam') }}">Workcube
+                                                                                     href="{{ route('modules.show', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim') }}">Workcube
                                                                                      PAM</a></li>
                                                                          </ul>
                                                                          <a href="{{ route('modules.index') }}"
@@ -327,13 +305,13 @@
                                                                      <div class="dropdown-mega-sub-nav">
                                                                          <ul class="list list-unstyled">
                                                                              <li><a class="dropdown-item"
-                                                                                     href="{{ route('modules.show', 'workcube-pms') }}">Workcube
+                                                                                     href="{{ route('modules.show', 'proje-yonetim-sistemi') }}">Workcube
                                                                                      PMS</a></li>
-                                                                             <li><a class="dropdown-item"
+                                                                             {{-- <li><a class="dropdown-item"
                                                                                      href="{{ route('modules.show', 'workcube-lms') }}">Workcube
-                                                                                     LMS</a></li>
+                                                                                     LMS</a></li> --}}
                                                                              <li><a class="dropdown-item"
-                                                                                     href="{{ route('modules.show', 'workcube-cms') }}">Workcube
+                                                                                     href="{{ route('modules.show', 'cms-intranet-icerik-yonetimi') }}">Workcube
                                                                                      CMS</a></li>
                                                                              <li><a class="dropdown-item"
                                                                                      href="{{ route('modules.show', 'workcube-dam') }}">Workcube

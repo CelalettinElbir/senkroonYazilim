@@ -5,33 +5,33 @@
         $iconClass = $module->icon ?: 'fas fa-cubes';
     @endphp
 
+
+
+
     <section class="page-header page-header-modern section position-relative border-0 m-0"
-        style="background-image: url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
-        <div class="container position-relative pb-5 mb-5">
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
+        <div class="container position-relative pb-2 mb-1 d-flex align-items-center justify-content-center">
+            <h1 class="text-color-white font-weight-bold mb-2">{{ $module->title }}</h1>
         </div>
     </section>
+
 
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card mb-4">
                     <div class="card-body p-4">
-                        <h2 class="text-color-dark font-weight-bold mb-3">{{ $module->title }}</h2>
 
-                        <div class="row">
+                        <div class="clearfix">
+                            <img src="{{ asset("storage/{$module->cover_image}") }}" alt="{{ $module->title }}"
+                                class="img-fluid float-start me-3 mb-3"
+                                style="max-width: 45%; height: auto; object-fit: cover;" />
 
-                            <div class="col-md-6">
-                                <img src="{{ asset($module->cover_image) }}" alt="{{ $module->title }}"
-                                    class="img-fluid mb-4" />
-                            </div>
-                            <div class="col-md-6">
-                                @if (!empty($module->content))
-                                    {!! $module->content !!}
-                                @else
-                                    <p class="text-3 opacity-8 mb-0">Bu modül için içerik yakında eklenecektir.</p>
-                                @endif
+                            <div class="text-content">
+                                {!! $module->content !!}
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

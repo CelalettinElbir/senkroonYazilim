@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Advisor extends Model
 {
@@ -10,7 +11,26 @@ class Advisor extends Model
         'title',
         'description',
         'image',
+        'slug',
+
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($advisor) {
+            if (empty($advisor->slug)) {
+                $advisor->slug = Str::slug($advisor->title);
+            }
+        });
+
+        static::updating(function ($advisor) {
+            // Her güncelleme sırasında slug'u yenile
+            $advisor->slug = Str::slug($advisor->title);
+        });
+    }
+
 
     public function getImageUrlAttribute()
     {

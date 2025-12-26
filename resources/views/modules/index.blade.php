@@ -3,10 +3,9 @@
 @section('content')
     @php use Illuminate\Support\Str; @endphp
     <section class="page-header page-header-modern section position-relative border-0 m-0"
-        style="background-image: url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
         <div class="container position-relative pb-5 mb-5">
-            <h1 class="text-color-dark font-weight-bold mb-2">Workcube Modülleri</h1>
-            <p class="text-3-5 text-color-dark opacity-7 mb-0">Öne çıkan modüller ve detayları</p>
+            <h1 class="text-color-white font-weight-bold mb-2">Workcube Modülleri</h1>
         </div>
     </section>
 
@@ -14,7 +13,7 @@
         <div class="row">
             @forelse($modules as $m)
                 @php
-                    $cardImg = asset("{$m->cover_image}");
+                    $cardImg = asset('storage/' . $m->cover_image);
                     // $iconClass = $m->icon ?: 'fas fa-cubes';
                 @endphp
                 <div class="col-md-6 col-lg-4 mb-4">
