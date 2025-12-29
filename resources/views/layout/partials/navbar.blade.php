@@ -36,22 +36,22 @@
                              800-123-4567
                          </a>
                      </div>
-                     <div class="header-nav-features d-none d-md-block">
+                     {{-- <div class="header-nav-features d-none d-md-block">
                          <div class="header-nav-feature header-nav-features-search d-inline-flex align-items-center">
                              <a href="#"
                                  class="header-nav-features-toggle text-color-dark font-weight-semibold text-decoration-none ms-1"
                                  data-focus="headerSearch">
                                  <i
                                      class="icons icon-magnifier header-nav-top-icon font-weight-semibold text-3-5 text-color-dark text-color-hover-primary font-weight-semibold top-3"></i>
-                                 Search
+                                 Ara
                              </a>
                              <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed border-radius-0 top-10 right-0"
                                  id="headerTopSearchDropdown">
                                  <form role="search" action="page-search-results.html" method="get">
                                      <div class="simple-search input-group">
                                          <input class="form-control text-1" id="headerSearch" name="q"
-                                             type="search" value="" placeholder="Search...">
-                                         <button class="btn" type="submit" aria-label="Search">
+                                             type="search" value="" placeholder="Ara...">
+                                         <button class="btn" type="submit" aria-label="Ara">
                                              <i
                                                  class="icons icon-magnifier header-nav-top-icon text-color-dark text-color-hover-primary top-2"></i>
                                          </button>
@@ -59,7 +59,7 @@
                                  </form>
                              </div>
                          </div>
-                     </div>
+                     </div> --}}
                  </div>
              </div>
          </div>
