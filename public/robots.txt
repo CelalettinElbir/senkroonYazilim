@@ -1,2 +1,44 @@
+# Senkron Yazılım - Workcube Yetkili Bayisi
+# Modern Yazılım Çözümleri ve IT Danışmanlık Hizmetleri
+
+# Google ve diğer tüm arama motorları için
 User-agent: *
-Disallow:
+
+# İzin verilen dizinler
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /build/
+
+# Yasaklanan dizinler ve dosyalar
+Disallow: /admin/
+Disallow: /api/
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /config/
+Disallow: /database/
+Disallow: /app/
+Disallow: /bootstrap/
+Disallow: /tests/
+Disallow: /routes/
+Disallow: /resources/
+Disallow: /*.log$
+Disallow: /*.env$
+Disallow: /*.md$
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /artisan
+
+# Özel bot yapılandırmaları
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap lokasyonu
+Sitemap: https://www.senkronyazilim.com/sitemap.xml
