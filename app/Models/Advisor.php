@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class Advisor extends Model
@@ -32,9 +33,12 @@ class Advisor extends Model
     }
 
 
-    public function getImageUrlAttribute()
-    {
-        return $this->image ? asset('storage/' . $this->image) : null;
-    }
+   public function getImageUrlAttribute()
+{
+    return $this->image
+        ? Storage::url($this->image)
+        : null;
+}
+
 
 }
