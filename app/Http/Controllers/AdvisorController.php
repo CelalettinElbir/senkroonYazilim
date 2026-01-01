@@ -21,10 +21,8 @@ class AdvisorController extends Controller
         SEOTools::opengraph()->addProperty('type', 'website');
         SEOTools::opengraph()->addProperty('site_name', 'Senkron Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
-        SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
         SEOTools::twitter()->setSite('@senkronyazilim');
         SEOTools::twitter()->setType('summary_large_image');
-        SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'ItemList');
         SEOTools::jsonLd()->addValue('name', 'Uzman Danışmanlarımız');
@@ -53,13 +51,13 @@ class AdvisorController extends Controller
         SEOTools::opengraph()->addProperty('profile:first_name', $advisor->name);
         SEOTools::twitter()->setSite('@senkronyazilim');
         SEOTools::twitter()->setType('summary');
-        if(isset($advisor->image)) {
-            SEOTools::opengraph()->addImage(asset($advisor->image));
-            SEOTools::twitter()->addImage(asset($advisor->image));
-        } else {
-            SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
-            SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
-        }
+        // if(isset($advisor->image)) {
+        //     SEOTools::opengraph()->addImage(asset($advisor->image));
+        //     SEOTools::twitter()->addImage(asset($advisor->image));
+        // } else {
+        //     SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
+        //     SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
+        // }
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'Person');
         SEOTools::jsonLd()->addValue('name', $advisor->name);

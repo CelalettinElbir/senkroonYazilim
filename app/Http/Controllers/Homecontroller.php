@@ -21,10 +21,10 @@ class Homecontroller extends Controller
         SEOTools::opengraph()->addProperty('type', 'website');
         SEOTools::opengraph()->addProperty('site_name', 'Senkron Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
-        SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
+        // SEOTools::opengraph()->addImage(asset('porto/simages/senkronlogo2.png'));
         SEOTools::twitter()->setSite('@senkronyazilim');
         SEOTools::twitter()->setType('summary_large_image');
-        SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
+        // SEOTools::twitter()->addImage(asset('porto/simages/senkronlogo2.png'));
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'Organization');
         SEOTools::jsonLd()->addValue('name', 'Senkron Yazılım');

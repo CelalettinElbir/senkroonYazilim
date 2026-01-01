@@ -42,7 +42,7 @@ return [
             'url'         => 'current', // Set null for using Url::current(), set false to total remove
             'type'        => 'website',
             'site_name'   => 'Senkron Yazılım',
-            'images'      => [asset('porto/simages/senkronlogo2.png')],
+            'images'      => ['/images/senkron-logo.png'],
         ],
     ],
     'twitter' => [
@@ -55,7 +55,7 @@ return [
             'creator'     => '@senkronyazilim',
             'title'       => 'Senkron Yazılım - Workcube Bayisi',
             'description' => 'Workcube yetkili bayisi. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri.',
-            'image'       => asset('porto/simages/senkronlogo2.png'),
+            'image'       => '/images/senkron-logo.png',
         ],
     ],
     'json-ld' => [
@@ -67,7 +67,7 @@ return [
             'description' => 'Senkron Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
             'url'         => 'current', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type'        => 'Organization',
-            'images'      => [asset('porto/simages/senkronlogo2.png')],
+            'images'      => ['/images/senkron-logo.png'],
         ],
     ],
 ];
