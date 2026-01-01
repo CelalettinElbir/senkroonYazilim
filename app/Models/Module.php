@@ -35,12 +35,7 @@ class Module extends Model
         });
     }
 
-    public function getCoverImageUrlAttribute()
-    {
-        return $this->cover_image
-            ? Storage::disk('public')->url($this->cover_image)
-            : null;
-    }
+
 
 
     /**
