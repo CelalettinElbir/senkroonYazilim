@@ -33,10 +33,11 @@ class Advisor extends Model
     }
 
 
-    public function getImageUrlAttribute()
+      public function getImageUrlAttribute()
     {
         return $this->image
             ? Storage::url($this->image)
             : null;
     }
+
 }
