@@ -36,7 +36,12 @@ class Module extends Model
     }
 
 
-
+    public function getCoverImageUrlAttribute()
+    {
+        return $this->cover_image
+            ? Storage::url($this->cover_image)
+            : null;
+    }
 
     /**
      * Route Model Binding için

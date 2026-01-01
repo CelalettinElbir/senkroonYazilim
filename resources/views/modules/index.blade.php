@@ -13,7 +13,7 @@
         <div class="row">
             @forelse($modules as $m)
                 @php
-                    $cardImg = asset('storage/' . $m->cover_image);
+                   $cardImg = $m->cover_image_url;
                     // $iconClass = $m->icon ?: 'fas fa-cubes';
                 @endphp
                 <div class="col-md-6 col-lg-4 mb-4">
