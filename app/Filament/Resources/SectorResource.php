@@ -19,23 +19,37 @@ class SectorResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationLabel = 'Sektörler';
+
+    protected static ?string $pluralModelLabel = 'Sektörler';
+
+    protected static ?string $modelLabel = 'Sektör';
+
+    protected static ?int $navigationSort = 2;
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->label('Sektör Adı')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('slug')
+                    ->label('Slug')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image_path')
+                    ->label('Görsel')
                     ->image(),
                 Forms\Components\Textarea::make('excerpt')
+                    ->label('Kısa Açıklama')
                     ->columnSpanFull(),
                 Forms\Components\RichEditor::make('body')
+                    ->label('İçerik')
                     ->columnSpanFull(),
                 Forms\Components\Toggle::make('is_active')
+                    ->label('Aktif mi?')
                     ->required(),
             ]);
     }
@@ -45,17 +59,22 @@ class SectorResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                    ->label('Sektör Adı')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image_path'),
+                Tables\Columns\ImageColumn::make('image_path')
+                    ->label('Görsel'),
                 Tables\Columns\IconColumn::make('is_active')
+                    ->label('Aktif mi?')
                     ->boolean(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label('Oluşturulma Tarihi')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Güncellenme Tarihi')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

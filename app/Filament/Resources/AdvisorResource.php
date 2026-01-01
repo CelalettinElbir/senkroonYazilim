@@ -33,6 +33,7 @@ class AdvisorResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')
+                    ->label('Başlık')
                     ->maxLength(255)
                     ->default(null)
                     ->reactive()
@@ -48,8 +49,10 @@ class AdvisorResource extends Resource
                     ->reactive()
                     ->unique(Advisor::class, 'slug', ignoreRecord: true),
                 Forms\Components\RichEditor::make('description')
+                    ->label('Açıklama')
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
+                    ->label('Görsel')
                     ->image()->disk('public')->directory('images/advisors'),
             ]);
     }
@@ -59,16 +62,20 @@ class AdvisorResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')
+                    ->label('Başlık')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                    ->label('Görsel'),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label('Oluşturulma Tarihi')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Güncellenme Tarihi')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

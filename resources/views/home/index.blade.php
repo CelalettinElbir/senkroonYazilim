@@ -124,7 +124,7 @@
                     <div class="call-to-action-content">
                         <h3 class="text-white mb-2">
                             <strong class="font-weight-extra-bold">Ücretsiz</strong> Workcube ERP demo için
-                            <strong class="font-weight-extra-bold">randevu alın!</strong>
+                            <strong class="font-weight-extra-bold">Teklif Al!</strong>
                         </h3>
                         <p class="mb-0 text-white opacity-8">
                             <i class="fas fa-clock me-2"></i>30 dakikalık online demoda Workcube ERP'nin
@@ -136,7 +136,7 @@
                     <div class="call-to-action-btn">
                         <a href="#randevu-form"
                             class="btn btn-light font-weight-bold text-primary text-3 btn-px-5 btn-py-3 popup-with-form">
-                            <i class="fas fa-calendar-alt me-2"></i>Randevu Al
+                            <i class="fas fa-calendar-alt me-2"></i>Teklif Al
                         </a>
                     </div>
                 </div>
