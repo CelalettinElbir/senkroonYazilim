@@ -14,8 +14,8 @@
 						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
 							<h5 class="text-3 mb-3">İLETİŞİM</h5>
 							<ul class="list list-icons list-icons-lg">
-								<li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">Örnek Mah. Örnek Cad. No:1, İstanbul</p></li>
-								<li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i><p class="m-0"><a href="tel:02161234567">(0216) 123-4567</a></p></li>
+								<li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">Polatlar Office, Tecde, Mıhlıdut Sk. A Blok No: 37/B, 44090 Yeşilyurt/Malatya</p></li>
+								<li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i><p class="m-0"><a href="tel:05306690444">0530 669 0444</a></p></li>
 								<li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:info@senkroon.com">info@senkroon.com</a></p></li>
 							</ul>
 						</div>

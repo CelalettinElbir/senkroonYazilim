@@ -9,7 +9,7 @@ use App\Http\Controllers\Homecontroller;
 
 Route::controller(Homecontroller::class)->group(function () {
     Route::get('/', 'index')->name('home.index');
-    route::get('/hakkimizda', 'about')->name('home.about');
+    // route::get('/hakkimizda', 'about')->name('home.about');
     Route::get('/iletisim', 'contactUs')->name('contact-us');
     Route::post('/iletisim', 'contactUsSubmit')->name('contact-us.submit');
 });

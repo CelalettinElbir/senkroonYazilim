@@ -41,7 +41,9 @@ class SectorResource extends Resource
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image_path')
                     ->label('Görsel')
-                    ->image(),
+                    ->image()->directory('sectors')
+                    ->visibility('public')
+                    ->disk('public'),
                 Forms\Components\Textarea::make('excerpt')
                     ->label('Kısa Açıklama')
                     ->columnSpanFull(),

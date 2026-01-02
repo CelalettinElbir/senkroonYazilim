@@ -1,8 +1,9 @@
 ﻿@extends('layout.master')
 
 @php
-    $iconClass = 'fas fa-building'; // Sektörler için varsayılan ikon
-    $imagePath = $sector->image_path ? asset("storage/{$sector->image_path}") : asset('images/modules/all.jpg');
+    use Illuminate\Support\Facades\Storage;
+    $iconClass = 'fas fa-building';
+    $imagePath = $sector->image_path ? asset('storage/' . $sector->image_path) : asset('images/modules/all.jpg');
 @endphp
 
 @section('content')

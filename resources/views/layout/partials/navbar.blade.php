@@ -33,7 +33,7 @@
                          <a href="tel:0123456789"
                              class="d-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold ms-1 me-3">
                              <i class="icon icon-phone text-4-5 me-2"></i>
-                             800-123-4567
+                             0530 669 0444
                          </a>
                      </div>
                      {{-- <div class="header-nav-features d-none d-md-block">
@@ -81,11 +81,11 @@
                                              </li>
 
                                              <!-- Hakkımızda -->
-                                             <li>
+                                             {{-- <li>
                                                  <a class="nav-link" href="{{ route('home.about') }}">
                                                      Hakkımızda
                                                  </a>
-                                             </li>
+                                             </li> --}}
 
                                              <!-- Hizmetlerimiz - Basit Dropdown (Mobil) -->
                                              <li class="dropdown d-lg-none">
@@ -182,8 +182,7 @@
                                                                              </li>
                                                                              <a href="{{ url('danismanlik-cozumleri') }}"
                                                                                  class="btn btn-link text-decoration-none ps-0">
-                                                                                 <i
-                                                                                     class="fas fa-angle-right me-1"></i>
+                                                                                 <i class="fas fa-angle-right me-1"></i>
                                                                                  Tüm Danışmanlık Çözümleri
                                                                              </a>
 
@@ -313,9 +312,9 @@
                                                                              <li><a class="dropdown-item"
                                                                                      href="{{ route('modules.show', 'cms-intranet-icerik-yonetimi') }}">Workcube
                                                                                      CMS</a></li>
-                                                                             <li><a class="dropdown-item"
+                                                                             {{-- <li><a class="dropdown-item"
                                                                                      href="{{ route('modules.show', 'workcube-dam') }}">Workcube
-                                                                                     DAM</a></li>
+                                                                                     DAM</a></li> --}}
                                                                          </ul>
                                                                      </div>
                                                                  </div>

@@ -11,15 +11,14 @@
             @foreach ($sectors as $sector)
                 <div class="col-12 col-sm-6 col-lg-4 mb-4">
                     @php
-                        $imagePath = $sector->image_path ?? null;
-                        $imageUrl = $imagePath && file_exists(public_path($imagePath))
-                            ? asset($imagePath)
+                        $imagePath = $sector->image_path
+                            ? asset('storage/' . $sector->image_path)
                             : asset('images/modules/all.jpg');
                     @endphp
 
                     <div class="card h-100 shadow-sm border-0 overflow-hidden">
                         <div class="position-relative"
-                            style="height: 180px; background: center / cover no-repeat url('{{ $imageUrl }}');">
+                            style="height: 180px; background: center / cover no-repeat url('{{ $imagePath }}');">
 
                         </div>
 

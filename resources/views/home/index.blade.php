@@ -134,7 +134,7 @@
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="call-to-action-btn">
-                        <a href="#randevu-form"
+                        <a href="{{ url('iletisim') }}"
                             class="btn btn-light font-weight-bold text-primary text-3 btn-px-5 btn-py-3 popup-with-form">
                             <i class="fas fa-calendar-alt me-2"></i>Teklif Al
                         </a>
@@ -510,7 +510,7 @@
                                         src="{{ asset('porto/simages/teknosis.png') }}">
                                 </div>
                             </div>
-                            <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
+                            {{-- <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
                                 <div>
                                     <img alt="" class="img-fluid rounded"
                                         src="{{ asset('porto/img/projects/project-2.jpg') }}">
@@ -545,7 +545,7 @@
                                     <img alt="" class="img-fluid rounded"
                                         src="{{ asset('porto/img/projects/project-4.jpg') }}">
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="owl-nav"><button type="button" role="presentation"
