@@ -6,7 +6,7 @@
                  <div class="header-column">
                      <div class="header-row">
                          <div class="header-logo mb-0">
-                             <a href="index.html">
+                             <a href="{{ url('/') }}">
                                  <img alt="Porto" width="150" height="60"
                                      src="{{ asset('porto/simages/senkronlogo2.png') }}">
                              </a>
