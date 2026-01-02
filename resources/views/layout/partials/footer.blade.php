@@ -9,7 +9,7 @@
 								<img alt="Senkroon Logo" src="{{ asset('porto/simages/senkronlogo1.svg') }}" class="opacity-7 bottom-4" height="200">
 							</a>
 							<p class="mt-2 mb-2">İş süreçlerinizi dijitalleştirerek verimliliğinizi artırıyor, size özel yazılım ve danışmanlık çözümleri sunuyoruz.</p>
-							<p class="mb-0"><a href="{{ route('home.about') }}" class="btn-flat btn-xs text-color-light"><strong class="text-2">DAHA FAZLA</strong><i class="fas fa-angle-right p-relative top-1 ps-2"></i></a></p>
+							{{-- <p class="mb-0"><a href="{{ route('home.about') }}" class="btn-flat btn-xs text-color-light"><strong class="text-2">DAHA FAZLA</strong><i class="fas fa-angle-right p-relative top-1 ps-2"></i></a></p> --}}
 						</div>
 						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
 							<h5 class="text-3 mb-3">İLETİŞİM</h5>
@@ -23,7 +23,7 @@
 							<h5 class="text-3 mb-3">MENÜ</h5>
 							<ul class="list list-icons list-icons-sm">
 								<li><i class="fas fa-angle-right"></i><a href="{{ route('home.index') }}" class="link-hover-style-1 ms-1"> Anasayfa</a></li>
-								<li><i class="fas fa-angle-right"></i><a href="{{ route('home.about') }}" class="link-hover-style-1 ms-1"> Hakkımızda</a></li>
+								{{-- <li><i class="fas fa-angle-right"></i><a href="{{ route('home.about') }}" class="link-hover-style-1 ms-1"> Hakkımızda</a></li> --}}
                                 <li><i class="fas fa-angle-right"></i><a href="{{ route('modules.index') }}" class="link-hover-style-1 ms-1"> Workcube Modülleri</a></li>
                                 <li><i class="fas fa-angle-right"></i><a href="{{ route('sectors.index') }}" class="link-hover-style-1 ms-1"> Sektörel Uygulamalar</a></li>
                                 <li><i class="fas fa-angle-right"></i><a href="{{ route('advisors.index') }}" class="link-hover-style-1 ms-1"> Danışmanlık Çözümleri</a></li>
