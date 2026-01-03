@@ -105,7 +105,9 @@
                         data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Workcube ERP ile
                         İşletmenizi Dönüştürün</h2>
                     <p class="text-color-dark text-4 font-weight-medium mb-4-5 appear-animation"
-                        data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Malatya'nın en güvenilir Workcube ERP çözüm ortağı olarak, işletmenizin dijital dönüşümü için eksiksiz hizmet sağlıyoruz.</p>
+                        data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Malatya'nın en
+                        güvenilir Workcube ERP çözüm ortağı olarak, işletmenizin dijital dönüşümü için eksiksiz hizmet
+                        sağlıyoruz.</p>
                     <a href="#randevu-form"
                         class="btn btn-primary btn-rounded border-0 font-weight-bold text-3 px-5 btn-py-3 appear-animation popup-with-form"
                         data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">DEMO TALEBINDE BUL</a>
@@ -160,8 +162,8 @@
                             placeholder="Adınız Soyadınız*" required>
                     </div>
                     <div class="form-group col-lg-6 mb-3">
-                        <input type="text" name="company" class="form-control" value=""
-                            placeholder="Şirket Adı*" required>
+                        <input type="text" name="company" class="form-control" value="" placeholder="Şirket Adı*"
+                            required>
                     </div>
                 </div>
                 <div class="row">
@@ -557,6 +559,24 @@
         </div>
     </section>
 
+    <!-- WhatsApp Floating Button -->
+    <div id="wa-button">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- WhatsApp Popup -->
+    <div id="wa-popup">
+        <div class="wa-header">
+            <span>WhatsApp Destek</span>
+            <button id="wa-close">×</button>
+        </div>
+        <div class="wa-body">
+            <p>Merhaba 👋<br>Size nasıl yardımcı olabiliriz?</p>
+            <a href="https://wa.me/905306690444?text=Merhaba%20bilgi%20almak%20istiyorum" target="_blank" class="wa-btn">
+                WhatsApp’tan Yaz
+            </a>
+        </div>
+    </div>
 
 
     {{-- <div class="container py-4 my-5 mb-5" id="news">
@@ -642,4 +662,28 @@
             </div>
         </div>
     </div> --}}
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.getElementById("wa-popup");
+            const button = document.getElementById("wa-button");
+            const closeBtn = document.getElementById("wa-close");
+
+            // 3 saniye sonra popup aç
+            setTimeout(() => {
+                popup.style.display = "block";
+            }, 3000);
+
+            // Butona tıklanınca aç/kapat
+            button.addEventListener("click", () => {
+                popup.style.display = popup.style.display === "block" ? "none" : "block";
+            });
+
+            // Kapatma
+            closeBtn.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+        });
+    </script>
 @endsection
