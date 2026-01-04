@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOTools;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 class Homecontroller extends Controller
 {
@@ -87,7 +89,11 @@ class Homecontroller extends Controller
             ]);
 
             Message::create($validated);
-
+            try {
+                Mail::to("celalettin.elbir@senkroon.com")->send(new ContactMail($validated));
+            } catch (\Exception $e) {
+                return redirect()->route('contact-us')->with('error', 'Mesajınız veritabanına kaydedildi ancak e-posta gönderilemedi. Lütfen daha sonra tekrar deneyin.');
+            }
             return redirect()->route('contact-us')->with('success', 'Mesajınız başarıyla gönderildi!');
         } catch (\Exception $e) {
             dd($e->getMessage());
