@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Message;
+use App\Models\message;
 use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Mail;
@@ -88,7 +88,7 @@ class Homecontroller extends Controller
                 'subject' => 'required|string|max:255',
             ]);
 
-            Message::create($validated);
+            message::create($validated);
             try {
                 Mail::to("celalettin.elbir@senkroon.com")->send(new ContactMail($validated));
             } catch (\Exception $e) {
