@@ -19,9 +19,9 @@ class ModuleResource extends Resource
 {
     protected static ?string $model = Module::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?string $navigationIcon = 'heroicon-o-squares-2x2';
     protected static ?string $navigationLabel = 'Modüller';
+
 
     protected static ?string $pluralModelLabel = 'Modüller';
 

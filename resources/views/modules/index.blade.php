@@ -4,7 +4,7 @@
     @php use Illuminate\Support\Str; @endphp
     <section class="page-header page-header-modern section position-relative border-0 m-0"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('images/modules/all.jpg') }}); background-position: center; background-size: cover;">
-        <div class="container position-relative pb-5 mb-5">
+        <div class="container position-relative pb-3 mb-3">
             <h1 class="text-color-white font-weight-bold mb-2">Workcube Modülleri</h1>
         </div>
     </section>

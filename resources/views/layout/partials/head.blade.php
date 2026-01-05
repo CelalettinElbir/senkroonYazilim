@@ -1,4 +1,4 @@
-﻿ <head>
+ <head>
 
  <!-- Basic -->
  <meta charset="utf-8">

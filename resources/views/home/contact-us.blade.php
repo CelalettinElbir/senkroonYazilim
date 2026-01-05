@@ -108,8 +108,8 @@
                                 <li class="d-flex align-items-center mb-3">
                                     <i
                                         class="icon icon-envelope text-color-dark text-3 font-weight-bold position-relative top-1 me-3-5"></i>
-                                    <a href="mailto:info@senkronyazilim.com"
-                                        class="d-inline-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-4-5">info@senkronyazilim.com</a>
+                                    <a href="mailto:info@senkroon.com"
+                                        class="d-inline-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-4-5">info@senkroon.com</a>
                                 </li>
                                 <li class="d-flex align-items-center mb-3">
                                     <i

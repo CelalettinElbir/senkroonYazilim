@@ -13,6 +13,7 @@ class Module extends Model
         'slug',
         'short_description',
         'content',
+        'category',
         'icon',
         'cover_image',
         'meta_title',

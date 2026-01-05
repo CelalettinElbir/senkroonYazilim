@@ -7,7 +7,7 @@
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('porto/simages/senkronlogo2.png') }}" width="200" height="100"
+                                <img src="{{ asset('porto/simages/senkroonlogo2.png') }}" width="200" height="100"
                                     alt="senkroon logo" />
                             </a>
                         </div>
@@ -84,8 +84,8 @@
                                                                 </div>
                                                                 <a href="{{ route('modules.mikroIndex') }}"
                                                                     class="d-block mb-3">
-                                                                    <img src="{{ asset('porto/simages/mikro_logo.png') }}"
-                                                                        alt="Mikro" class="img-fluid rounded mb-2">
+                                                                    <img src="{{ asset('porto/simages/mikro.png') }}"
+                                                                        alt="Mikro" class="img-fluid rounded mb-2 ">
                                                                     <p class="text-2 mb-0">Mikro Run + Mikro Jump +
                                                                         Mikro Fly + Mikro Jump Basic ve daha
                                                                         fazlası...</p>
@@ -184,63 +184,96 @@
                                                 Ürünler & Çözümler
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li class="dropdown-header">Workcube Çözümleri</li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'erp-satis-satinalma-dagitim-sd-scm') }}">Workcube
-                                                        ERP</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'crm-musteri-iliskileri-yonetimi') }}">Workcube
-                                                        CRM</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'insan-kaynaklari-ik') }}">Workcube
-                                                        HR</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim') }}">Workcube
-                                                        PAM</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'proje-yonetim-sistemi') }}">Workcube
-                                                        PMS</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'cms-intranet-icerik-yonetimi') }}">Workcube
-                                                        CMS</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider">
+                                                <!-- Workcube Çözümleri -->
+                                                <li class="dropdown-header text-primary fw-bold">
+                                                    <i class="fas fa-cube me-1"></i> Workcube Çözümleri
                                                 </li>
-                                                <li class="dropdown-header">Mikro Çözümleri</li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'mikro-run') }}">Mikro
-                                                        Run</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'mikro-jump') }}">Mikro
-                                                        Jump</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('modules.show', 'mikro-fly') }}">Mikro
-                                                        Fly</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider">
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.show', 'erp-satis-satinalma-dagitim-sd-scm') }}">
+                                                        <i class="fas fa-chart-line me-2 text-muted"></i>Workcube ERP</a></li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.show', 'crm-musteri-iliskileri-yonetimi') }}">
+                                                        <i class="fas fa-users me-2 text-muted"></i>Workcube CRM</a></li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.show', 'insan-kaynaklari-ik') }}">
+                                                        <i class="fas fa-user-tie me-2 text-muted"></i>Workcube HR</a></li>
+                                                {{-- <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.show', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim') }}">
+                                                        <i class="fas fa-tools me-2 text-muted"></i>Workcube PAM</a></li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.show', 'proje-yonetim-sistemi') }}">
+                                                        <i class="fas fa-project-diagram me-2 text-muted"></i>Workcube PMS</a></li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.show', 'cms-intranet-icerik-yonetimi') }}">
+                                                        <i class="fas fa-edit me-2 text-muted"></i>Workcube CMS</a></li> --}}
+                                                <li><a class="dropdown-item fw-bold text-primary py-2"
+                                                        href="{{ route('modules.index') }}">
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Workcube Çözümleri</a></li>
+
+                                                <li><hr class="dropdown-divider my-2"></li>
+
+                                                <!-- Mikro Çözümleri -->
+                                                <li class="dropdown-header text-primary fw-bold">
+                                                    <i class="fas fa-microchip me-1"></i> Mikro Çözümleri
                                                 </li>
-                                                <li class="dropdown-header">Sektörel Uygulamalar</li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('sectors.show', 'uretim-odakli-isletmeler') }}">Üretim
-                                                        Odaklı İşletmeler</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('sectors.show', 'toptan-ticaret') }}">Toptan
-                                                        Ticaret</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('sectors.show', 'perakendecilik') }}">Perakendecilik</a>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.mikroShow', 'mikro-run') }}">
+                                                        <i class="fas fa-play me-2 text-muted"></i>Mikro Run</a></li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.mikroShow', 'mikro-jump') }}">
+                                                        <i class="fas fa-arrow-up me-2 text-muted"></i>Mikro Jump</a></li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ route('modules.mikroShow', 'mikro-fly') }}">
+                                                        <i class="fas fa-paper-plane me-2 text-muted"></i>Mikro Fly</a></li>
+                                                <li><a class="dropdown-item fw-bold text-primary py-2"
+                                                        href="{{ route('modules.mikroIndex') }}">
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Mikro Çözümleri</a></li>
+
+                                                <li><hr class="dropdown-divider my-2"></li>
+
+                                                <!-- Sektörel Uygulamalar -->
+                                                <li class="dropdown-header text-primary fw-bold">
+                                                    <i class="fas fa-industry me-1"></i> Sektörel Uygulamalar
                                                 </li>
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('sectors.show', 'hizmet-sektoru') }}">Hizmet
-                                                        Sektörü</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider">
-                                                </li>
-                                                <li><a class="dropdown-item fw-bold"
-                                                        href="{{ route('modules.index') }}">Tüm Workcube
-                                                        Çözümleri</a></li>
-                                                <li><a class="dropdown-item fw-bold"
-                                                        href="{{ route('modules.mikroIndex') }}">Tüm Mikro
-                                                        Çözümleri</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'uretim-odakli-isletmeler') }}">
+                                                        <i class="fas fa-cogs me-2 text-muted"></i>Üretim Odaklı İşletmeler</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'toptan-ticaret') }}">
+                                                        <i class="fas fa-warehouse me-2 text-muted"></i>Toptan Ticaret</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'perakendecilik') }}">
+                                                        <i class="fas fa-shopping-cart me-2 text-muted"></i>Perakendecilik</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'hizmet-sektoru') }}">
+                                                        <i class="fas fa-handshake me-2 text-muted"></i>Hizmet Sektörü</a></li>
+                                                {{-- <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'taahhut-sektoru') }}">
+                                                        <i class="fas fa-hard-hat me-2 text-muted"></i>Taahhüt Sektörü</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'sivil-toplum') }}">
+                                                        <i class="fas fa-heart me-2 text-muted"></i>Sivil Toplum</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'kamu') }}">
+                                                        <i class="fas fa-university me-2 text-muted"></i>Kamu</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'mobilya') }}">
+                                                        <i class="fas fa-chair me-2 text-muted"></i>Mobilya</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'moda') }}">
+                                                        <i class="fas fa-tshirt me-2 text-muted"></i>Moda</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'insaat') }}">
+                                                        <i class="fas fa-building me-2 text-muted"></i>İnşaat</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'maden') }}">
+                                                        <i class="fas fa-mountain me-2 text-muted"></i>Maden</a></li>
+                                                <li><a class="dropdown-item py-1"
+                                                        href="{{ route('sectors.show', 'kozmetik') }}">
+                                                        <i class="fas fa-spa me-2 text-muted"></i>Kozmetik</a></li> --}}
+                                                <li><a class="dropdown-item fw-bold text-success py-2"
+                                                        href="{{ route('sectors.index') }}">
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Sektörel Uygulamalar</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown d-lg-none">
