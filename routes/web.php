@@ -18,16 +18,12 @@ Route::controller(Homecontroller::class)->group(function () {
 use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\SectorController;
 
-Route::prefix('workcube-modulleri')->group(function () {
+// Birleştirilmiş module route'ları - category ile gruplanmış
+Route::prefix('{category}-modulleri')->where(['category' => 'mikro|workcube'])->group(function () {
     Route::get('/', [ModuleController::class, 'index'])->name('modules.index');
     Route::get('/{module}', [ModuleController::class, 'show'])->name('modules.show');
 });
 
-
-Route::prefix('mikro-modulleri')->group(function () {
-    Route::get('/', [ModuleController::class, 'mikroIndex'])->name('modules.mikroIndex');
-    Route::get('/{module}', [ModuleController::class, 'mikroShow'])->name('modules.mikroShow');
-});
 
 
 
@@ -39,7 +35,7 @@ Route::prefix('sektorel-uygulamalar')->group(function () {
 
 
 
-Route::prefix("danismanlik-cozumleri")->group(function(){
+Route::prefix("danismanlik-cozumleri")->group(function () {
     Route::get('/', [AdvisorController::class, 'index'])->name('advisors.index');
     Route::get('/{slug}', [AdvisorController::class, 'show'])->name('advisors.show');
 });

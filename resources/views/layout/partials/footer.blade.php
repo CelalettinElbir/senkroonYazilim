@@ -24,7 +24,8 @@
 							<ul class="list list-icons list-icons-sm">
 								<li><i class="fas fa-angle-right"></i><a href="{{ route('home.index') }}" class="link-hover-style-1 ms-1"> Anasayfa</a></li>
 								{{-- <li><i class="fas fa-angle-right"></i><a href="{{ route('home.about') }}" class="link-hover-style-1 ms-1"> Hakkımızda</a></li> --}}
-                                <li><i class="fas fa-angle-right"></i><a href="{{ route('modules.index') }}" class="link-hover-style-1 ms-1"> Workcube Modülleri</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="{{ route('modules.index', 'workcube') }}" class="link-hover-style-1 ms-1"> Workcube Modülleri</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="{{ route('modules.index', 'mikro') }}" class="link-hover-style-1 ms-1"> Mikro Modülleri</a></li>
                                 <li><i class="fas fa-angle-right"></i><a href="{{ route('sectors.index') }}" class="link-hover-style-1 ms-1"> Sektörel Uygulamalar</a></li>
                                 <li><i class="fas fa-angle-right"></i><a href="{{ route('advisors.index') }}" class="link-hover-style-1 ms-1"> Danışmanlık Çözümleri</a></li>
 								<li><i class="fas fa-angle-right"></i><a href="{{ route('contact-us') }}" class="link-hover-style-1 ms-1"> İletişim</a></li>

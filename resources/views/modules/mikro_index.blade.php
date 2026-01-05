@@ -30,7 +30,7 @@
                             @endif
 
                             <div class="d-flex align-items-end justify-content-end">
-                                <a href="{{ route('modules.show', $m) }}" class="btn btn-primary  mt-2 ">Detay</a>
+                                <a href="{{ route('modules.show', [$category, $m->slug]) }}" class="btn btn-primary  mt-2 ">Detay</a>
                             </div>
                         </div>
                     </div>

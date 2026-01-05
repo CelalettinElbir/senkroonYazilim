@@ -25,7 +25,7 @@
                                           </li> --}}
 
                                         <li class="dropdown dropdown-mega d-none d-lg-block">
-                                            <a class="nav-link dropdown-toggle" href="{{ route('modules.index') }}">
+                                            <a class="nav-link dropdown-toggle" href="{{ route('modules.index', 'workcube') }}">
                                                 Ürünler & Çözümler
                                             </a>
                                             <ul class="dropdown-menu">
@@ -35,7 +35,7 @@
                                                             <div class="col-lg-4">
                                                                 <div class="dropdown-mega-sub-title">Workcube
                                                                 </div>
-                                                                <a href="{{ route('modules.index') }}"
+                                                                <a href="{{ route('modules.index', 'workcube') }}"
                                                                     class="d-block mb-3">
                                                                     <img src="{{ asset('porto/simages/W3_logo.png') }}"
                                                                         alt="Workcube" class="img-fluid rounded mb-2">
@@ -48,31 +48,31 @@
                                                                         <div class="col-6">
                                                                             <ul class="list list-unstyled">
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'erp-satis-satinalma-dagitim-sd-scm') }}">Workcube
+                                                                                        href="{{ route('modules.show', ['workcube', 'erp-satis-satinalma-dagitim-sd-scm']) }}">Workcube
                                                                                         ERP</a></li>
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'crm-musteri-iliskileri-yonetimi') }}">Workcube
+                                                                                        href="{{ route('modules.show', ['workcube', 'crm-musteri-iliskileri-yonetimi']) }}">Workcube
                                                                                         CRM</a></li>
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'insan-kaynaklari-ik') }}">Workcube
+                                                                                        href="{{ route('modules.show', ['workcube', 'insan-kaynaklari-ik']) }}">Workcube
                                                                                         HR</a></li>
                                                                             </ul>
                                                                         </div>
                                                                         <div class="col-6">
                                                                             <ul class="list list-unstyled">
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim') }}">Workcube
+                                                                                        href="{{ route('modules.show', ['workcube', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim']) }}">Workcube
                                                                                         PAM</a></li>
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'proje-yonetim-sistemi') }}">Workcube
+                                                                                        href="{{ route('modules.show', ['workcube', 'proje-yonetim-sistemi']) }}">Workcube
                                                                                         PMS</a></li>
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'cms-intranet-icerik-yonetimi') }}">Workcube
+                                                                                        href="{{ route('modules.show', ['workcube', 'cms-intranet-icerik-yonetimi']) }}">Workcube
                                                                                         CMS</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
-                                                                    <a href="{{ route('modules.index') }}"
+                                                                    <a href="{{ route('modules.index', 'workcube') }}"
                                                                         class="btn btn-link text-decoration-none ps-0">
                                                                         <i class="fas fa-angle-right me-1"></i>
                                                                         Tüm Workcube Çözümleri
@@ -82,7 +82,7 @@
                                                             <div class="col-lg-4">
                                                                 <div class="dropdown-mega-sub-title">Mikro
                                                                 </div>
-                                                                <a href="{{ route('modules.mikroIndex') }}"
+                                                                <a href="{{ route('modules.index', 'mikro') }}"
                                                                     class="d-block mb-3">
                                                                     <img src="{{ asset('porto/simages/mikro.png') }}"
                                                                         alt="Mikro" class="img-fluid rounded mb-2 ">
@@ -95,22 +95,22 @@
                                                                         <div class="col-6">
                                                                             <ul class="list list-unstyled">
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'mikro-run') }}">Mikro
+                                                                                        href="{{ route('modules.show', ['mikro', 'mikro-run']) }}">Mikro
                                                                                         Run</a></li>
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'mikro-jump') }}">Mikro
+                                                                                        href="{{ route('modules.show', ['mikro', 'mikro-jump']) }}">Mikro
                                                                                         Jump</a></li>
                                                                             </ul>
                                                                         </div>
                                                                         <div class="col-6">
                                                                             <ul class="list list-unstyled">
                                                                                 <li><a class="dropdown-item"
-                                                                                        href="{{ route('modules.show', 'mikro-fly') }}">Mikro
+                                                                                        href="{{ route('modules.show', ['mikro', 'mikro-fly']) }}">Mikro
                                                                                         Fly</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
-                                                                    <a href="{{ route('modules.mikroIndex') }}"
+                                                                    <a href="{{ route('modules.index', 'mikro') }}"
                                                                         class="btn btn-link text-decoration-none ps-0">
                                                                         <i class="fas fa-angle-right me-1"></i>
                                                                         Tüm Mikro Çözümleri
@@ -180,7 +180,7 @@
                                         </li>
                                         <!-- Ürünler & Çözümler - Basit Dropdown (Mobil) -->
                                         <li class="dropdown d-lg-none">
-                                            <a class="nav-link dropdown-toggle" href="{{ route('modules.index') }}">
+                                            <a class="nav-link dropdown-toggle" href="{{ route('modules.index', 'workcube') }}">
                                                 Ürünler & Çözümler
                                             </a>
                                             <ul class="dropdown-menu">
@@ -189,13 +189,13 @@
                                                     <i class="fas fa-cube me-1"></i> Workcube Çözümleri
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', 'erp-satis-satinalma-dagitim-sd-scm') }}">
+                                                        href="{{ route('modules.show', ['workcube', 'erp-satis-satinalma-dagitim-sd-scm']) }}">
                                                         <i class="fas fa-chart-line me-2 text-muted"></i>Workcube ERP</a></li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', 'crm-musteri-iliskileri-yonetimi') }}">
+                                                        href="{{ route('modules.show', ['workcube', 'crm-musteri-iliskileri-yonetimi']) }}">
                                                         <i class="fas fa-users me-2 text-muted"></i>Workcube CRM</a></li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', 'insan-kaynaklari-ik') }}">
+                                                        href="{{ route('modules.show', ['workcube', 'insan-kaynaklari-ik']) }}">
                                                         <i class="fas fa-user-tie me-2 text-muted"></i>Workcube HR</a></li>
                                                 {{-- <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim') }}">
@@ -207,7 +207,7 @@
                                                         href="{{ route('modules.show', 'cms-intranet-icerik-yonetimi') }}">
                                                         <i class="fas fa-edit me-2 text-muted"></i>Workcube CMS</a></li> --}}
                                                 <li><a class="dropdown-item fw-bold text-primary py-2"
-                                                        href="{{ route('modules.index') }}">
+                                                        href="{{ route('modules.index', 'workcube') }}">
                                                         <i class="fas fa-arrow-right me-2"></i>Tüm Workcube Çözümleri</a></li>
 
                                                 <li><hr class="dropdown-divider my-2"></li>
@@ -217,16 +217,16 @@
                                                     <i class="fas fa-microchip me-1"></i> Mikro Çözümleri
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.mikroShow', 'mikro-run') }}">
+                                                        href="{{ route('modules.show', ['mikro', 'mikro-run']) }}">
                                                         <i class="fas fa-play me-2 text-muted"></i>Mikro Run</a></li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.mikroShow', 'mikro-jump') }}">
+                                                        href="{{ route('modules.show', ['mikro', 'mikro-jump']) }}">
                                                         <i class="fas fa-arrow-up me-2 text-muted"></i>Mikro Jump</a></li>
                                                 <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.mikroShow', 'mikro-fly') }}">
+                                                        href="{{ route('modules.show', ['mikro', 'mikro-fly']) }}">
                                                         <i class="fas fa-paper-plane me-2 text-muted"></i>Mikro Fly</a></li>
                                                 <li><a class="dropdown-item fw-bold text-primary py-2"
-                                                        href="{{ route('modules.mikroIndex') }}">
+                                                        href="{{ route('modules.index', 'mikro') }}">
                                                         <i class="fas fa-arrow-right me-2"></i>Tüm Mikro Çözümleri</a></li>
 
                                                 <li><hr class="dropdown-divider my-2"></li>
