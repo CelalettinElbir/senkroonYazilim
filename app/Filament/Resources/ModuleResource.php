@@ -50,7 +50,7 @@ class ModuleResource extends Resource
                                     })
                                     ->maxLength(255),
 
-                                 Forms\Components\TextInput::make('slug')
+                                Forms\Components\TextInput::make('slug')
                                     ->label('Slug')
                                     ->required()
                                     ->unique(ignoreRecord: true)
@@ -62,9 +62,20 @@ class ModuleResource extends Resource
                                     ->maxLength(500)
                                     ->required(),
 
+                                Forms\Components\Select::make('category')
+                                    ->label('Kategori')
+                                    ->options([
+                                        'workcube' => 'Workcube',
+                                        'mikro' => 'Mikro',
+                                    ])
+                                    ->required(),
+
                                 Forms\Components\RichEditor::make('content')
                                     ->label('Detay İçeriği')
                                     ->columnSpanFull(),
+
+
+
                             ])
                             ->columns(2),
 
@@ -86,6 +97,9 @@ class ModuleResource extends Resource
                                     ->imageEditor(),
                             ])
                             ->columns(2),
+
+
+
 
                         /* =======================
                          * SEO
@@ -122,7 +136,7 @@ class ModuleResource extends Resource
             ]);
     }
 
-       public static function table(Table $table): Table
+    public static function table(Table $table): Table
     {
         return $table
             ->columns([

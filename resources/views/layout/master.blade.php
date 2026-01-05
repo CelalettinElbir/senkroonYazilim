@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 
 @include("layout.partials.head")
@@ -8,7 +8,7 @@
 <body >
 
     <div class="body">
-        @include("layout.partials.navbar")
+        @include("layout.partials.navbar2")
 
         <div role="main" class="main">
             @yield('content')

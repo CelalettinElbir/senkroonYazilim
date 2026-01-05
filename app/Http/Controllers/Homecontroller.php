@@ -100,4 +100,6 @@ class Homecontroller extends Controller
             return redirect()->route('contact-us')->with('error', 'Bir hata oluştu: ' . $e->getMessage());
         }
     }
+
+    
 }

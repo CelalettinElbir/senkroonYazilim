@@ -24,6 +24,12 @@ Route::prefix('workcube-modulleri')->group(function () {
 });
 
 
+Route::prefix('mikro-modulleri')->group(function () {
+    Route::get('/', [ModuleController::class, 'mikroIndex'])->name('modules.mikroIndex');
+    Route::get('/{module}', [ModuleController::class, 'mikroShow'])->name('modules.mikroShow');
+});
+
+
 
 
 Route::prefix('sektorel-uygulamalar')->group(function () {
