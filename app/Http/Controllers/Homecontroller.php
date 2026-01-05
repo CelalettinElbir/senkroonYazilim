@@ -23,10 +23,10 @@ class Homecontroller extends Controller
         SEOTools::opengraph()->addProperty('type', 'website');
         SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
-        // SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
         SEOTools::twitter()->setSite('@senkroonyazilim');
         SEOTools::twitter()->setType('summary_large_image');
-        // SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'Organization');
         SEOTools::jsonLd()->addValue('name', 'Senkroon Yazılım');
@@ -100,6 +100,4 @@ class Homecontroller extends Controller
             return redirect()->route('contact-us')->with('error', 'Bir hata oluştu: ' . $e->getMessage());
         }
     }
-
-
 }
