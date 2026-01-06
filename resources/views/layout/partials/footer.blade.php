@@ -1,4 +1,4 @@
-﻿<footer id="footer">
+<footer id="footer">
 				<div class="container">
 					<div class="footer-ribbon">
 						<span>İletişime Geçin</span>
@@ -6,7 +6,7 @@
 					<div class="row py-5 my-4">
 						<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
 							<a href="{{ route('home.index') }}" class="">
-								<img alt="Senkroon Logo" src="{{ asset('porto/simages/senkronlogo1.svg') }}" class="opacity-7 bottom-4" height="200">
+								<img alt="Senkroon Logo" src="{{ asset('porto/simages/senkronlogo1.png') }}" class="opacity-7 bottom-4" height="200">
 							</a>
 							<p class="mt-2 mb-2">İş süreçlerinizi dijitalleştirerek verimliliğinizi artırıyor, size özel yazılım ve danışmanlık çözümleri sunuyoruz.</p>
 							{{-- <p class="mb-0"><a href="{{ route('home.about') }}" class="btn-flat btn-xs text-color-light"><strong class="text-2">DAHA FAZLA</strong><i class="fas fa-angle-right p-relative top-1 ps-2"></i></a></p> --}}
@@ -34,9 +34,9 @@
 						<div class="col-md-6 col-lg-2">
 							<h5 class="text-3 mb-3">BİZİ TAKİP EDİN</h5>
 							<ul class="social-icons">
-								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-								<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+								<li class="social-icons-instagram"><a href="https://www.instagram.com/senkroon_?igsh=MWtvc2U0ZGJwZ3M4aA%3D%3D&utm_source=qr" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+								<li class="social-icons-youtube"><a href="https://youtube.com/@senkroon_danismanlik?si=XX8n0lWNscFMN9cP" target="_blank" title="Twitter"><i class="fab fa-youtube"></i></a></li>
+								<li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/green-world-enerji%CC%87-teksti%CC%87l-i%CC%87n%C5%9Faat-taah-di%C5%9F-ti%CC%87caret-ltd-%C5%9Fti%CC%87/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
 							</ul>
 						</div>
 					</div>

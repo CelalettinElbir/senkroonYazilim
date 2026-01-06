@@ -249,13 +249,12 @@
 * Contact Form
 */
 .custom-form-style-1 .form-control {
-		height: calc(1.8em + 1.85rem + 2px);
+		height: calc(  1.85rem + 2px);
 		padding: 15.6px 20px;
 		padding: 0.975rem 1.25rem;
 		background: transparent;
 		border-width: 2px;
 		border-color: var(--grey-500);
-		border-radius: 35px;
 		line-height: 1.5 !important;
 }
 

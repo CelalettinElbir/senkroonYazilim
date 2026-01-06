@@ -77,7 +77,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group col mb-4">
-                                <textarea maxlength="5000" data-msg-required="Lütfen mesajınızı girin." rows="10" class="form-control"
+                                <textarea maxlength="5000" data-msg-required="Lütfen mesajınızı girin." rows="3" class="form-control"
                                     name="message" id="message" required placeholder="Mesajınız"></textarea>
                             </div>
                         </div>

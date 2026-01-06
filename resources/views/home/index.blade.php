@@ -1,4 +1,4 @@
-﻿@extends('layout.master')
+@extends('layout.master')
 @section('content')
     <section class="section position-relative border-0 m-0"
         style="background-image: url(porto/simages/main.png); background-position: center; background-size: cover;">
@@ -108,7 +108,7 @@
                         data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Malatya'nın en
                         güvenilir Workcube ERP çözüm ortağı olarak, işletmenizin dijital dönüşümü için eksiksiz hizmet
                         sağlıyoruz.</p>
-                    <a href="#randevu-form"
+                    <a href="{{ route('contact-us') }}"
                         class="btn btn-primary btn-rounded border-0 font-weight-bold text-3 px-5 btn-py-3 appear-animation popup-with-form"
                         data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">DEMO TALEBINDE BUL</a>
                 </div>
@@ -472,8 +472,57 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <hr class="mb-5">
 
 
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="row mb-5">
+                    <div class="col text-center">
+                        <h2 class="font-weight-bold line-height-2 text-7 mb-1">Danışmanlık Alanlarımız</h2>
+                        <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
+                            çözümler sunuyoruz</span>
+
+                    </div>
+                </div>
+
+                <div class="container pb-5 mb-5">
+                    <div class="row">
+                        @foreach ($advisors->take(3) as $advisor)
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
+                                        alt="{{ $advisor->title }}">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold">{{ $advisor->title }}</h5>
+                                        <p class="card-text">{!! Str::limit($advisor->description, 100) !!}</p>
+                                        @if ($advisor->slug)
+                                            <a href="{{ route('advisors.show', $advisor->slug) }}"
+                                                class="btn btn-primary">Detayları
+                                                Görüntüle</a>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    @if ($advisors->count() > 3)
+                        <div class="row">
+                            <div class="col text-center">
+                                <a href="{{ route('advisors.index') }}"
+                                    class="btn btn-primary btn-outline btn-rounded font-weight-semibold text-3 btn-px-4 btn-py-2">
+                                    Tüm Danışmanlık Alanlarını Görüntüle
+                                </a>
+                            </div>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -512,42 +561,6 @@
                                         src="{{ asset('porto/simages/teknosis.png') }}">
                                 </div>
                             </div>
-                            {{-- <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
-                                <div>
-                                    <img alt="" class="img-fluid rounded"
-                                        src="{{ asset('porto/img/projects/project-2.jpg') }}">
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
-                                <div>
-                                    <img alt="" class="img-fluid rounded"
-                                        src="{{ asset('porto/img/projects/project-3.jpg') }}">
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
-                                <div>
-                                    <img alt="" class="img-fluid rounded"
-                                        src="{{ asset('porto/img/projects/project-1.jpg') }}">
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
-                                <div>
-                                    <img alt="" class="img-fluid rounded"
-                                        src="{{ asset('porto/img/projects/project-2.jpg') }}">
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
-                                <div>
-                                    <img alt="" class="img-fluid rounded"
-                                        src="{{ asset('porto/img/projects/project-3.jpg') }}">
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 278.667px; margin-right: 10px;">
-                                <div>
-                                    <img alt="" class="img-fluid rounded"
-                                        src="{{ asset('porto/img/projects/project-4.jpg') }}">
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                     <div class="owl-nav"><button type="button" role="presentation"
@@ -559,24 +572,9 @@
         </div>
     </section>
 
-    <!-- WhatsApp Floating Button -->
-    <div id="wa-button">
-        <i class="fab fa-whatsapp"></i>
-    </div>
 
-    <!-- WhatsApp Popup -->
-    <div id="wa-popup">
-        <div class="wa-header">
-            <span>WhatsApp Destek</span>
-            <button id="wa-close">×</button>
-        </div>
-        <div class="wa-body">
-            <p>Merhaba 👋<br>Size nasıl yardımcı olabiliriz?</p>
-            <a href="https://wa.me/905306690444?text=Merhaba%20bilgi%20almak%20istiyorum" target="_blank" class="wa-btn">
-                WhatsApp’tan Yaz
-            </a>
-        </div>
-    </div>
+
+
 
 
     {{-- <div class="container py-4 my-5 mb-5" id="news">
@@ -666,24 +664,15 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const popup = document.getElementById("wa-popup");
-            const button = document.getElementById("wa-button");
-            const closeBtn = document.getElementById("wa-close");
-
-            // 3 saniye sonra popup aç
+            // PopupManager'ın yüklenmesini bekle
             setTimeout(() => {
-                popup.style.display = "block";
-            }, 3000);
-
-            // Butona tıklanınca aç/kapat
-            button.addEventListener("click", () => {
-                popup.style.display = popup.style.display === "block" ? "none" : "block";
-            });
-
-            // Kapatma
-            closeBtn.addEventListener("click", () => {
-                popup.style.display = "none";
-            });
+                if (window.popupManager) {
+                    // 3 saniye sonra WhatsApp popup'ı aç
+                    setTimeout(() => {
+                        window.popupManager.showPopup("wa-popup");
+                    }, 3000);
+                }
+            }, 100);
         });
     </script>
 @endsection

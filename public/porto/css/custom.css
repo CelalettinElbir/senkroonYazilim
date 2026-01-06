@@ -13,7 +13,7 @@
     justify-content: center;
     cursor: pointer;
     z-index: 9999;
-    box-shadow: 0 4px 15px rgba(0,0,0,.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
 }
 
 #wa-popup {
@@ -23,7 +23,7 @@
     width: 260px;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0,0,0,.25);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, .25);
     display: none;
     z-index: 9999;
     overflow: hidden;
@@ -61,4 +61,91 @@
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+
+
+
+
+#contact-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ff8500;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
+}
+
+#contact-popup {
+    position: fixed;
+    bottom: 90px;
+    left: 20px;
+    width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, .25);
+    display: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    #contact-popup {
+        width: calc(100% - 40px);
+        left: 20px;
+        bottom: 80px;
+    }
+}
+
+.contact-header {
+    background: #ff8500;
+    color: #fff;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+#contact-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-body {
+    padding: 12px;
+}
+
+.contact-body input,
+.contact-body textarea {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.contact-btn {
+    width: 100%;
+    background: #ff8500;
+    color: #fff;
+    padding: 9px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
 }

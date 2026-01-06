@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
+use App\Models\Advisor;
 
 class Homecontroller extends Controller
 {
@@ -32,7 +33,11 @@ class Homecontroller extends Controller
         SEOTools::jsonLd()->addValue('name', 'Senkroon Yazılım');
         SEOTools::jsonLd()->addValue('url', url()->current());
 
-        return view('home.index');
+
+        $advisors = Advisor::all();
+
+
+        return view('home.index',compact('advisors'));
     }
 
 
@@ -86,17 +91,46 @@ class Homecontroller extends Controller
                 'message' => 'required|string|max:5000',
                 'phone' => 'required|string|max:20',
                 'subject' => 'required|string|max:255',
+                'company' => 'nullable|string|max:255',
             ]);
 
             message::create($validated);
+
             try {
-                Mail::to("celalettin.elbir@senkroon.com")->send(new ContactMail($validated));
+                // Mail::to("celalettin.elbir@senkroon.com")->send(new ContactMail($validated));
+                $message = 'Mesajınız başarıyla gönderildi!';
             } catch (\Exception $e) {
-                return redirect()->route('contact-us')->with('error', 'Mesajınız veritabanına kaydedildi ancak e-posta gönderilemedi. Lütfen daha sonra tekrar deneyin.');
+                $message = 'Mesajınız veritabanına kaydedildi ancak e-posta gönderilemedi.';
             }
-            return redirect()->route('contact-us')->with('success', 'Mesajınız başarıyla gönderildi!');
+
+            // AJAX isteği ise JSON döndür
+            if ($request->ajax()) {
+                return response()->json([
+                    'success' => true,
+                    'message' => $message
+                ]);
+            }
+
+            return redirect()->route('contact-us')->with('success', $message);
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            // AJAX isteği ise validation hatalarını JSON olarak döndür
+            if ($request->ajax()) {
+                return response()->json([
+                    'success' => false,
+                    'errors' => $e->errors()
+                ], 422);
+            }
+
+            return redirect()->back()->withErrors($e->errors())->withInput();
         } catch (\Exception $e) {
-            dd($e->getMessage());
+            // AJAX isteği ise genel hatayı JSON olarak döndür
+            if ($request->ajax()) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Bir hata oluştu: ' . $e->getMessage()
+                ], 500);
+            }
+
             return redirect()->route('contact-us')->with('error', 'Bir hata oluştu: ' . $e->getMessage());
         }
     }

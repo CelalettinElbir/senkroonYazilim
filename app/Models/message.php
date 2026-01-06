@@ -12,6 +12,7 @@ class Message extends Model
         'phone',
         'subject',
         'message',
+        "company",
     ];
 
     protected $casts = [
