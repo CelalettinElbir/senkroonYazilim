@@ -27,6 +27,7 @@ class SectorController extends Controller
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'ItemList');
         SEOTools::jsonLd()->addValue('name', 'Hizmet Verdiğimiz Sektörler');
+        SEOTools::jsonLd()->addValue('logo', asset('porto/simages/senkroonlogo2.png'));
         SEOTools::jsonLd()->addValue('url', url()->current());
 
         $sectors = Sector::query()
@@ -69,6 +70,7 @@ class SectorController extends Controller
         SEOTools::jsonLd()->addValue('@type', 'Service');
         SEOTools::jsonLd()->addValue('name', $sector->name . ' Sektörü Yazılım Çözümleri');
         SEOTools::jsonLd()->addValue('description', $sector->description);
+        SEOTools::jsonLd()->addValue('logo', asset('porto/simages/senkroonlogo2.png'));
         SEOTools::jsonLd()->addValue('url', url()->current());
         SEOTools::jsonLd()->addValue('provider', [
             '@type' => 'Organization',

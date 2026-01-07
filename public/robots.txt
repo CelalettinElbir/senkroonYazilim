@@ -1,4 +1,4 @@
-# Senkron Yazılım - Workcube Yetkili Bayisi
+# Senkroon Yazılım - Workcube Yetkili Bayisi
 # Modern Yazılım Çözümleri ve IT Danışmanlık Hizmetleri
 
 # Google ve diğer tüm arama motorları için
@@ -41,4 +41,4 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap lokasyonu
-Sitemap: https://www.senkronyazilim.com/sitemap.xml
+Sitemap: https://www.Senkroonyazilim.com/sitemap.xml

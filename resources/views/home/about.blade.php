@@ -32,7 +32,7 @@
                         ERP danışmanlığı hizmetleri sunmaktadır.
                     </p>
                     <p class="mb-4">
-                        Şirketimiz halen <strong>Workcube Ankara Çözüm Ortaklığını</strong> sürdürmektedir.
+                        Şirketimiz halen <strong>Workcube Malatya Çözüm Ortaklığını</strong> sürdürmektedir.
                         Müşteri odaklı yaklaşımımız sayesinde her bir işletmenin özgün ihtiyaçlarına uygun
                         çözümler üretirken, teknolojinin ve yenilikçiliğin gücünü en etkili şekilde kullanmayı
                         sürdürmekteyiz.

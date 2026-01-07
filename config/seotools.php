@@ -10,11 +10,11 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => 'Senkron Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
+            'title'        => 'Senkroon Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
             'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description'  => 'Senkron Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
+            'description'  => 'Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
             'separator'    => ' - ',
-            'keywords'     => ['workcube bayisi', 'workcube partner', 'workcube yetkili bayi', 'yazılım çözümleri', 'web tasarım', 'mobil uygulama', 'IT danışmanlık', 'senkron yazılım', 'erp çözümleri', 'iş yönetimi'],
+            'keywords'     => ['workcube bayisi', 'workcube partner', 'workcube yetkili bayi', 'yazılım çözümleri', 'web tasarım', 'mobil uygulama', 'IT danışmanlık', 'Senkroon yazılım', 'erp çözümleri', 'iş yönetimi'],
             'canonical'    => 'current', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'robots'       => 'index,follow', // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],
@@ -37,12 +37,12 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'Senkron Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
-            'description' => 'Senkron Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
+            'title'       => 'Senkroon Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
+            'description' => 'Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
             'url'         => 'current', // Set null for using Url::current(), set false to total remove
             'type'        => 'website',
-            'site_name'   => 'Senkron Yazılım',
-            'images'      => ['/images/senkron-logo.png'],
+            'site_name'   => 'Senkroon Yazılım',
+            'images'      => ['/images/Senkroon-logo.png'],
         ],
     ],
     'twitter' => [
@@ -51,11 +51,11 @@ return [
          */
         'defaults' => [
             'card'        => 'summary_large_image',
-            'site'        => '@senkronyazilim',
-            'creator'     => '@senkronyazilim',
-            'title'       => 'Senkron Yazılım - Workcube Bayisi',
+            'site'        => '@Senkroonyazilim',
+            'creator'     => '@Senkroonyazilim',
+            'title'       => 'Senkroon Yazılım - Workcube Bayisi',
             'description' => 'Workcube yetkili bayisi. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri.',
-            'image'       => '/images/senkron-logo.png',
+            'image'       => '/images/Senkroon-logo.png',
         ],
     ],
     'json-ld' => [
@@ -63,11 +63,11 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => 'Senkron Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
-            'description' => 'Senkron Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
+            'title'       => 'Senkroon Yazılım - Workcube Bayisi | Modern Yazılım Çözümleri', // set false to total remove
+            'description' => 'Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz.', // set false to total remove
             'url'         => 'current', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type'        => 'Organization',
-            'images'      => ['/images/senkron-logo.png'],
+            'images'      => ['/images/Senkroon-logo.png'],
         ],
     ],
 ];

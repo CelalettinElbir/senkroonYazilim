@@ -16,9 +16,10 @@ class Homecontroller extends Controller
     {
         SEOTools::setTitle('Senkroon Yazılım - Workcube Yetkili Bayisi | Modern Yazılım Çözümleri');
         SEOTools::setDescription('Senkroon Yazılım olarak Workcube yetkili bayisiyiz. Modern yazılım çözümleri, web tasarım, mobil uygulama geliştirme ve IT danışmanlık hizmetleri sunuyoruz. Workcube ERP çözümleri ile işletmenizi dijitalleştirin.');
-        SEOTools::metatags()->setKeywords(['workcube bayisi', 'workcube yetkili bayi', 'workcube partner', 'erp çözümleri', 'yazılım çözümleri', 'web tasarım', 'mobil uygulama', 'IT danışmanlık', 'Senkroon yazılım', 'iş yönetimi']);
+        SEOTools::metatags()->setKeywords(['senkroon yazılım', 'workcube bayisi', 'workcube yetkili bayi', 'workcube partner', 'erp çözümleri', 'yazılım çözümleri', 'web tasarım', 'web design', 'mobil uygulama', 'mobile app', 'IT danışmanlık', 'IT consulting', 'iş yönetimi', 'business management', 'dijital dönüşüm', 'digital transformation', 'yazılım geliştirme', 'software development']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
+        SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
@@ -31,7 +32,22 @@ class Homecontroller extends Controller
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'Organization');
         SEOTools::jsonLd()->addValue('name', 'Senkroon Yazılım');
+        SEOTools::jsonLd()->addValue('logo', [
+            '@type' => 'ImageObject',
+            'url' => asset('porto/simages/senkroonlogo2.png'),
+            'width' => 400,
+            'height' => 400
+        ]);
         SEOTools::jsonLd()->addValue('url', url()->current());
+        SEOTools::jsonLd()->addValue('sameAs', [
+            'https://twitter.com/senkroonyazilim',
+            'https://linkedin.com/company/senkroon-yazilim'
+        ]);
+        SEOTools::jsonLd()->addValue('contactPoint', [
+            '@type' => 'ContactPoint',
+            'contactType' => 'customer service',
+            'availableLanguage' => 'Turkish'
+        ]);
 
 
         $advisors = Advisor::all();
@@ -43,18 +59,31 @@ class Homecontroller extends Controller
 
     public function about()
     {
-        SEOTools::setTitle('Hakkımızda - senkroon Yazılım | Misyonumuz ve Vizyonumuz');
-        SEOTools::setDescription('senkroon Yazılım olarak 2020 yılından bu yana modern yazılım çözümleri sunuyoruz. Deneyimli ekibimiz, misyonumuz ve vizyonumuz hakkında detaylı bilgi.');
-        SEOTools::metatags()->setKeywords(['hakkımızda', 'senkroon yazılım', 'yazılım şirketi', 'misyon', 'vizyon', 'ekip', 'deneyim', 'kurumsal']);
+        SEOTools::setTitle('Hakkımızda - Senkroon Yazılım | Misyonumuz ve Vizyonumuz');
+        SEOTools::setDescription('Senkroon Yazılım olarak 2020 yılından bu yana modern yazılım çözümleri sunuyoruz. Deneyimli ekibimiz, misyonumuz ve vizyonumuz hakkında detaylı bilgi.');
+        SEOTools::metatags()->setKeywords(['hakkımızda', 'about us', 'senkroon yazılım', 'yazılım şirketi', 'software company', 'misyon', 'mission', 'vizyon', 'vision', 'ekip', 'team', 'deneyim', 'experience', 'kurumsal', 'corporate', 'yazılım geliştirme', 'software development', 'teknoloji', 'technology']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
-        SEOTools::metatags()->addMeta('author', 'senkroon Yazılım');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
+        SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
-        SEOTools::opengraph()->addProperty('site_name', 'senkroon Yazılım');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
+        SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
         SEOTools::twitter()->setSite('@senkroonyazilim');
-        SEOTools::twitter()->setType('summary');
+        SEOTools::twitter()->setType('summary_large_image');
+        SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
+        SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
+        SEOTools::jsonLd()->addValue('@type', 'AboutPage');
+        SEOTools::jsonLd()->addValue('name', 'Hakkımızda - Senkroon Yazılım');
+        SEOTools::jsonLd()->addValue('logo', [
+            '@type' => 'ImageObject',
+            'url' => asset('porto/simages/senkroonlogo2.png'),
+            'width' => 400,
+            'height' => 400
+        ]);
+        SEOTools::jsonLd()->addValue('url', url()->current());
 
         return view('home.about');
     }
@@ -62,21 +91,30 @@ class Homecontroller extends Controller
 
     public function contactUs()
     {
-        SEOTools::setTitle('İletişim - senkroon Yazılım | Bize Ulaşın');
-        SEOTools::setDescription('senkroon Yazılım ile iletişime geçin. Yazılım projeniz, danışmanlık hizmetleri ve tüm sorularınız için bizimle iletişime geçebilirsiniz.');
-        SEOTools::metatags()->setKeywords(['iletişim', 'senkroon yazılım', 'yazılım teklifi', 'danışmanlık', 'proje teklifi', 'contact']);
+        SEOTools::setTitle('İletişim - Senkroon Yazılım | Bize Ulaşın');
+        SEOTools::setDescription('Senkroon Yazılım ile iletişime geçin. Yazılım projeniz, danışmanlık hizmetleri ve tüm sorularınız için bizimle iletişime geçebilirsiniz.');
+        SEOTools::metatags()->setKeywords(['iletişim', 'contact', 'senkroon yazılım', 'yazılım teklifi', 'software quote', 'danışmanlık', 'consulting', 'proje teklifi', 'project quote', 'teklif al', 'get quote', 'yazılım projesi', 'software project', 'destek', 'support', 'müşteri hizmetleri', 'customer service']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
-        SEOTools::metatags()->addMeta('author', 'senkroon Yazılım');
+        SEOTools::metatags()->addMeta('author', 'Senkroon Yazılım');
+        SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
-        SEOTools::opengraph()->addProperty('site_name', 'senkroon Yazılım');
+        SEOTools::opengraph()->addProperty('site_name', 'Senkroon Yazılım');
         SEOTools::opengraph()->addProperty('locale', 'tr_TR');
+        SEOTools::opengraph()->addImage(asset('porto/simages/senkroonlogo2.png'));
         SEOTools::twitter()->setSite('@senkroonyazilim');
-        SEOTools::twitter()->setType('summary');
+        SEOTools::twitter()->setType('summary_large_image');
+        SEOTools::twitter()->addImage(asset('porto/simages/senkroonlogo2.png'));
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'ContactPage');
-        SEOTools::jsonLd()->addValue('name', 'senkroon Yazılım İletişim');
+        SEOTools::jsonLd()->addValue('name', 'Senkroon Yazılım İletişim');
+        SEOTools::jsonLd()->addValue('logo', [
+            '@type' => 'ImageObject',
+            'url' => asset('porto/simages/senkroonlogo2.png'),
+            'width' => 400,
+            'height' => 400
+        ]);
         SEOTools::jsonLd()->addValue('url', url()->current());
 
         return view('home.contact-us');

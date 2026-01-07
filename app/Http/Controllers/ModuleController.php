@@ -14,16 +14,17 @@ class ModuleController extends Controller
         if ($category === 'mikro') {
             SEOTools::setTitle('Mikro Modüllerimiz - Senkron Yazılım | Hafif Çözümler');
             SEOTools::setDescription('Senkron Yazılım tarafından geliştirilen hafif mikro yazılım modülleri. Hızlı ve etkili çözümlerimizi keşfedin.');
-            SEOTools::metatags()->setKeywords(['mikro modüller', 'hafif yazılım', 'senkron yazılım', 'micro modules']);
+            SEOTools::metatags()->setKeywords(['mikro modüller', 'micro modules', 'hafif yazılım', 'lightweight software', 'senkron yazılım', 'hızlı çözümler', 'quick solutions', 'mini yazılımlar', 'mini software', 'basit modüller', 'simple modules', 'yazılım bileşenleri', 'software components']);
             SEOTools::jsonLd()->addValue('name', 'Mikro Modüller');
         } else {
             SEOTools::setTitle('Yazılım Modüllerimiz - Senkron Yazılım | Özel Çözümler');
             SEOTools::setDescription('Senkron Yazılım tarafından geliştirilen özel yazılım modülleri. CRM, ERP, e-ticaret, muhasebe ve daha fazlası. Hazır çözümlerimizi keşfedin.');
-            SEOTools::metatags()->setKeywords(['yazılım modülleri', 'crm', 'erp', 'e-ticaret', 'muhasebe', 'hazır yazılım', 'senkron yazılım', 'software modules']);
+            SEOTools::metatags()->setKeywords(['yazılım modülleri', 'software modules', 'crm', 'erp', 'e-ticaret', 'e-commerce', 'muhasebe', 'accounting', 'hazır yazılım', 'ready software', 'senkron yazılım', 'özel modüller', 'custom modules', 'işletme yazılımı', 'business software', 'yazılım çözümleri', 'software solutions']);
             SEOTools::jsonLd()->addValue('name', 'Yazılım Modülleri');
         }
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkron Yazılım');
+        SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'website');
@@ -36,6 +37,12 @@ class ModuleController extends Controller
         SEOTools::jsonLd()->addValue('@context', 'https://schema.org');
         SEOTools::jsonLd()->addValue('@type', 'ItemList');
         SEOTools::jsonLd()->addValue('name', 'Yazılım Modülleri');
+        SEOTools::jsonLd()->addValue('logo', [
+            '@type' => 'ImageObject',
+            'url' => asset('porto/simages/senkroonlogo2.png'),
+            'width' => 400,
+            'height' => 400
+        ]);
         SEOTools::jsonLd()->addValue('url', url()->current());
 
         $modules = Module::where('is_active', true)
@@ -60,9 +67,10 @@ class ModuleController extends Controller
 
         SEOTools::setTitle($module->title . ' Modülü - Senkron Yazılım | Detaylı Bilgiler');
         SEOTools::setDescription($module->short_description ?? 'Senkron Yazılım ' . $module->title . ' modülü hakkında detaylı bilgiler, özellikleri ve kullanım alanları.');
-        SEOTools::metatags()->setKeywords([strtolower($module->title), 'yazılım modülü', 'senkron yazılım', 'software module', 'detay']);
+        SEOTools::metatags()->setKeywords([strtolower($module->title), strtolower($module->title) . ' modülü', strtolower($module->title) . ' module', 'yazılım modülü', 'software module', 'senkron yazılım', 'detay', 'details', 'özellikler', 'features', 'kullanım alanı', 'use case', 'işletme yazılımı', 'business software']);
         SEOTools::metatags()->addMeta('robots', 'index,follow');
         SEOTools::metatags()->addMeta('author', 'Senkron Yazılım');
+        SEOTools::metatags()->addMeta('viewport', 'width=device-width, initial-scale=1');
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addProperty('type', 'article');
@@ -82,9 +90,25 @@ class ModuleController extends Controller
         SEOTools::jsonLd()->addValue('@type', 'SoftwareApplication');
         SEOTools::jsonLd()->addValue('name', $module->title);
         SEOTools::jsonLd()->addValue('description', $module->short_description);
+        SEOTools::jsonLd()->addValue('logo', [
+            '@type' => 'ImageObject',
+            'url' => asset('porto/simages/senkroonlogo2.png'),
+            'width' => 400,
+            'height' => 400
+        ]);
         SEOTools::jsonLd()->addValue('url', url()->current());
         SEOTools::jsonLd()->addValue('applicationCategory', 'BusinessApplication');
         SEOTools::jsonLd()->addValue('operatingSystem', 'Web-based');
+        SEOTools::jsonLd()->addValue('author', [
+            '@type' => 'Organization',
+            'name' => 'Senkron Yazılım',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => asset('porto/simages/senkroonlogo2.png'),
+                'width' => 400,
+                'height' => 400
+            ]
+        ]);
 
         // Category'ye göre view seç
         $viewName = ($category === 'mikro') ? 'modules.mikro_show' : 'modules.show';
