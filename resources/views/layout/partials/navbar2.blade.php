@@ -24,8 +24,22 @@
                                               <a href="{{ url('/') }}" class="nav-link active">Home</a>
                                           </li> --}}
 
+
+                                        <li>
+                                            <a class="nav-link" href="{{ route('home.index') }}">
+                                                Anasayfa
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="nav-link" href="{{ route('home.about') }}">
+                                                Hakkımızda
+                                            </a>
+                                        </li>
+
                                         <li class="dropdown dropdown-mega d-none d-lg-block">
-                                            <a class="nav-link dropdown-toggle" href="{{ route('modules.index', 'workcube') }}">
+                                            <a class="nav-link dropdown-toggle"
+                                                href="{{ route('modules.index', 'workcube') }}">
                                                 Ürünler & Çözümler
                                             </a>
                                             <ul class="dropdown-menu">
@@ -180,7 +194,8 @@
                                         </li>
                                         <!-- Ürünler & Çözümler - Basit Dropdown (Mobil) -->
                                         <li class="dropdown d-lg-none">
-                                            <a class="nav-link dropdown-toggle" href="{{ route('modules.index', 'workcube') }}">
+                                            <a class="nav-link dropdown-toggle"
+                                                href="{{ route('modules.index', 'workcube') }}">
                                                 Ürünler & Çözümler
                                             </a>
                                             <ul class="dropdown-menu">
@@ -190,13 +205,16 @@
                                                 </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['workcube', 'erp-satis-satinalma-dagitim-sd-scm']) }}">
-                                                        <i class="fas fa-chart-line me-2 text-muted"></i>Workcube ERP</a></li>
+                                                        <i class="fas fa-chart-line me-2 text-muted"></i>Workcube
+                                                        ERP</a></li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['workcube', 'crm-musteri-iliskileri-yonetimi']) }}">
-                                                        <i class="fas fa-users me-2 text-muted"></i>Workcube CRM</a></li>
+                                                        <i class="fas fa-users me-2 text-muted"></i>Workcube CRM</a>
+                                                </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['workcube', 'insan-kaynaklari-ik']) }}">
-                                                        <i class="fas fa-user-tie me-2 text-muted"></i>Workcube HR</a></li>
+                                                        <i class="fas fa-user-tie me-2 text-muted"></i>Workcube HR</a>
+                                                </li>
                                                 {{-- <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim') }}">
                                                         <i class="fas fa-tools me-2 text-muted"></i>Workcube PAM</a></li>
@@ -208,9 +226,12 @@
                                                         <i class="fas fa-edit me-2 text-muted"></i>Workcube CMS</a></li> --}}
                                                 <li><a class="dropdown-item fw-bold text-primary py-2"
                                                         href="{{ route('modules.index', 'workcube') }}">
-                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Workcube Çözümleri</a></li>
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Workcube
+                                                        Çözümleri</a></li>
 
-                                                <li><hr class="dropdown-divider my-2"></li>
+                                                <li>
+                                                    <hr class="dropdown-divider my-2">
+                                                </li>
 
                                                 <!-- Mikro Çözümleri -->
                                                 <li class="dropdown-header text-primary fw-bold">
@@ -221,15 +242,20 @@
                                                         <i class="fas fa-play me-2 text-muted"></i>Mikro Run</a></li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['mikro', 'mikro-jump']) }}">
-                                                        <i class="fas fa-arrow-up me-2 text-muted"></i>Mikro Jump</a></li>
+                                                        <i class="fas fa-arrow-up me-2 text-muted"></i>Mikro Jump</a>
+                                                </li>
                                                 <li><a class="dropdown-item py-2"
                                                         href="{{ route('modules.show', ['mikro', 'mikro-fly']) }}">
-                                                        <i class="fas fa-paper-plane me-2 text-muted"></i>Mikro Fly</a></li>
+                                                        <i class="fas fa-paper-plane me-2 text-muted"></i>Mikro Fly</a>
+                                                </li>
                                                 <li><a class="dropdown-item fw-bold text-primary py-2"
                                                         href="{{ route('modules.index', 'mikro') }}">
-                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Mikro Çözümleri</a></li>
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Mikro Çözümleri</a>
+                                                </li>
 
-                                                <li><hr class="dropdown-divider my-2"></li>
+                                                <li>
+                                                    <hr class="dropdown-divider my-2">
+                                                </li>
 
                                                 <!-- Sektörel Uygulamalar -->
                                                 <li class="dropdown-header text-primary fw-bold">
@@ -237,16 +263,21 @@
                                                 </li>
                                                 <li><a class="dropdown-item py-1"
                                                         href="{{ route('sectors.show', 'uretim-odakli-isletmeler') }}">
-                                                        <i class="fas fa-cogs me-2 text-muted"></i>Üretim Odaklı İşletmeler</a></li>
+                                                        <i class="fas fa-cogs me-2 text-muted"></i>Üretim Odaklı
+                                                        İşletmeler</a></li>
                                                 <li><a class="dropdown-item py-1"
                                                         href="{{ route('sectors.show', 'toptan-ticaret') }}">
-                                                        <i class="fas fa-warehouse me-2 text-muted"></i>Toptan Ticaret</a></li>
+                                                        <i class="fas fa-warehouse me-2 text-muted"></i>Toptan
+                                                        Ticaret</a></li>
                                                 <li><a class="dropdown-item py-1"
                                                         href="{{ route('sectors.show', 'perakendecilik') }}">
-                                                        <i class="fas fa-shopping-cart me-2 text-muted"></i>Perakendecilik</a></li>
+                                                        <i
+                                                            class="fas fa-shopping-cart me-2 text-muted"></i>Perakendecilik</a>
+                                                </li>
                                                 <li><a class="dropdown-item py-1"
                                                         href="{{ route('sectors.show', 'hizmet-sektoru') }}">
-                                                        <i class="fas fa-handshake me-2 text-muted"></i>Hizmet Sektörü</a></li>
+                                                        <i class="fas fa-handshake me-2 text-muted"></i>Hizmet
+                                                        Sektörü</a></li>
                                                 {{-- <li><a class="dropdown-item py-1"
                                                         href="{{ route('sectors.show', 'taahhut-sektoru') }}">
                                                         <i class="fas fa-hard-hat me-2 text-muted"></i>Taahhüt Sektörü</a></li>
@@ -273,7 +304,8 @@
                                                         <i class="fas fa-spa me-2 text-muted"></i>Kozmetik</a></li> --}}
                                                 <li><a class="dropdown-item fw-bold text-success py-2"
                                                         href="{{ route('sectors.index') }}">
-                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Sektörel Uygulamalar</a></li>
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Sektörel
+                                                        Uygulamalar</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown d-lg-none">

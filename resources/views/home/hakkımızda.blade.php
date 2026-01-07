@@ -16,25 +16,26 @@
 
 <!-- Main Content -->
 <div class="container py-5">
-
+    @dd($request->all())
     <!-- Şirket Hikayesi -->
     <div class="row py-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
             <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
                 <h2 class="text-color-primary font-weight-bold text-6 mb-4">Şirket Hikayemiz</h2>
                 <p class="text-4 mb-4">
-                    Günümüzün hızla değişen iş dünyasında, başarının temel taşı güçlü yazılım altyapısı ve etkili
-                    danışmanlık hizmetleriyle atılmaktadır.
+                    Malatya ve çevresinde faaliyet gösteren işletmelerin dijital dönüşüm ihtiyaçlarını
+                    karşılamak amacıyla yola çıktık. ERP danışmanlığı alanındaki derin uzmanlığımızla,
+                    işletmelere stratejik değer katan çözümler sunuyoruz.
                 </p>
                 <p class="mb-4">
-                    Bu ihtiyaçtan yola çıkarak kurulan firmamız, sektördeki deneyimi ve uzman kadrosuyla işletmelere
-                    geleceğe yönelik çözümler sunmayı hedeflemektedir.
+                    Yerel pazarı yakından tanıyan deneyimli ekibimiz, işletmelerin süreçlerini optimize etmek,
+                    verimliliği artırmak ve rekabet avantajı sağlamak için özel olarak tasarlanmış
+                    ERP danışmanlığı hizmetleri sunmaktadır.
                 </p>
                 <p class="mb-4">
-                    Şirketimiz halen <strong>Workcube Ankara Çözüm Ortaklığını</strong> sürdürmektedir.
-                    Müşteri odaklı yaklaşımımız sayesinde her bir işletmenin özgün ihtiyaçlarına uygun
-                    çözümler üretirken, teknolojinin ve yenilikçiliğin gücünü en etkili şekilde kullanmayı
-                    sürdürmekteyiz.
+                    Modern ERP teknolojileri konusundaki uzmanlığımızı, <strong>Workcube çözüm ortaklığımız</strong>
+                    ile birleştirerek, işletmenizin benzersiz ihtiyaçlarına uygun, ölçeklenebilir
+                    ve sürdürülebilir çözümler geliştiriyoruz.
                 </p>
             </div>
         </div>
@@ -124,8 +125,8 @@
     <div class="row py-5">
         <div class="col-12">
             <div class="text-center mb-5">
-                <h2 class="text-color-primary font-weight-bold text-6 mb-3">Workcube Çözümleri</h2>
-                <p class="text-4">İşletmenizin her ihtiyacına uygun Workcube modülleri</p>
+                <h2 class="text-color-primary font-weight-bold text-6 mb-3">ERP Çözüm Alanlarımız</h2>
+                <p class="text-4">İşletmenizin dijital dönüşümü için kapsamlı ERP modülleri</p>
             </div>
         </div>
 
@@ -212,11 +213,11 @@
                     </div>
                     <h3 class="font-weight-bold text-center mb-4">Misyonumuz</h3>
                     <p class="text-3 text-center">
-                        Kurum ve kuruluşlardan gelecek yazılım ve bilişim ürünleri taleplerine,
-                        profesyonel anlamda cevap verebilen ve bunu kapsamlı bir danışmanlık
-                        misyonuyla yerine getiren, kurumsallaşmak ve verimliliği artırmak için
-                        hizmet talep eden tüm kurum ve kuruluşlar için, yeniliğe ve verimliliğe
-                        açılan kapı olmak.
+                        Malatya ve bölgesindeki işletmelere, ERP danışmanlığı alanında uzman yaklaşımımızla
+                        operasyonel mükemmellik kazandırmak. Süreç optimizasyonu, sistem entegrasyonu ve
+                        dijital dönüşüm konularında güvenilir ortağı olmak. Her işletmenin kendine özgü
+                        ihtiyaçlarına uygun, ölçeklenebilir çözümler sunarak bölgesel ekonominin
+                        gelişimine katkıda bulunmak.
                     </p>
                 </div>
             </div>
@@ -230,9 +231,10 @@
                     </div>
                     <h3 class="font-weight-bold text-center mb-4">Vizyonumuz</h3>
                     <p class="text-3 text-center">
-                        Hizmet sunduğumuz tüm kurum ve kuruluşlara, kurumsal yönetim, verimlilik
-                        ve öngörülebilirlik alanlarında, çok yönlü ve profesyonel çözümler
-                        geliştirebilen, markalaşmış bir danışmanlık firması olmak.
+                        Doğu Anadolu Bölgesi'nin önde gelen ERP danışmanlık firması olarak,
+                        işletmelerin dijital dönüşüm yolculuğunda tercihi edilen, güvenilir
+                        ve yenilikçi çözüm ortağı konumuna ulaşmak. Bölgesel kalkınmaya
+                        teknoloji köprüsü olarak katkıda bulunmak.
                     </p>
                 </div>
             </div>
