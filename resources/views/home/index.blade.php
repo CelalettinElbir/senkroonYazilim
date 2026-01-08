@@ -226,12 +226,48 @@
 
 
 
+
+
     <!-- about us  -->
-    <section class="section section-default border-0 my-5 appear-animation animated fadeIn appear-animation-visible"
+    <section class="section section-default border-0  appear-animation animated fadeIn appear-animation-visible"
         data-appear-animation="fadeIn" data-appear-animation-delay="750" style="animation-delay: 750ms;">
         <div class="container py-4">
 
             <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <div class="overflow-hidden mb-2">
+                        <h2 class="text-color-primary font-weight-bold text-7 mb-0 pt-0 mt-0 appear-animation animated maskUp appear-animation-visible"
+                            data-appear-animation="maskUp" data-appear-animation-delay="1200"
+                            style="animation-delay: 1200ms;">Hakkımızda </h2>
+                    </div>
+                    <div class="appear-animation" data-appear-animation="fadeInLeftShorter"
+                        data-appear-animation-delay="300">
+                        <p class="text-3 mb-4">
+                            Senkroon; ERP danışmanlığı, iş süreçleri ve organizasyon tasarımı, muhasebe & finansal
+                            yapılandırma
+                            ve Workcube ERP başta olmak üzere kurumsal yazılım çözümlerine odaklanan, işletmelerin uçtan uca
+                            dönüşümünü hedefleyen bir iş ortağıdır.
+                        </p>
+                        <p class=" text-3 mb-4">
+                            ERP projeleri, süreç ve organizasyon danışmanlığı, muhasebe–finans modellemesi ile Workcube
+                            ERP’nin
+                            konumlandırılması ve devreye alınması; ayrıca ihtiyaç duyulan ölçek ve yapılarda Mikro ve Watom
+                            yazılımlarının doğru kurgulanması alanlarında entegre hizmet sunuyoruz.
+                        </p>
+                        <p class=" text-3 mb-4">
+                            Sahadaki yönetim ve operasyon tecrübemizi analitik bakış açısı ve teknoloji odaklı
+                            yaklaşımımızla
+                            birleştirerek; hazır kalıplar yerine kurum kültürünüze ve çalışma biçiminize uygun, size özel iş
+                            modelleri tasarlıyoruz. Amacımız; veriye dayalı karar almanızı sağlayan, güvenilir, ölçülebilir
+                            ve
+                            sürdürülebilir bir yönetim altyapısı kurmak; ERP’yi tek başına bir yazılım değil, işinizin
+                            omurgasını güçlendiren stratejik bir araç hâline getirmek.
+                        </p>
+                    </div>
+                </div>
+
+
                 <div class="col-md-6 appear-animation animated fadeInLeftShorter appear-animation-visible"
                     data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000"
                     style="animation-delay: 1000ms;">
@@ -255,25 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="overflow-hidden mb-2">
-                        <h2 class="text-color-dark font-weight-normal text-7 mb-0 pt-0 mt-0 appear-animation animated maskUp appear-animation-visible"
-                            data-appear-animation="maskUp" data-appear-animation-delay="1200"
-                            style="animation-delay: 1200ms;">Hakkımızda <strong class="font-weight-extra-bold">Malatya
-                                Workcube</strong></h2>
-                    </div>
-                    <p class="appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400"
-                        style="animation-delay: 1400ms;">Malatya ve çevresinde faaliyet gösteren işletmelerin
-                        dijital dönüşüm yolculuğunda güvenilir teknoloji partneri olarak, <strong>Workcube ERP</strong>
-                        çözümlerini yerel pazar ihtiyaçlarına uygun şekilde sunmaktayız.</p>
-                    <p class="mb-0 appear-animation animated fadeInUpShorter appear-animation-visible"
-                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600"
-                        style="animation-delay: 1600ms;">Deneyimli teknik kadromuz ve 7/24 destek hizmetimizle,
-                        işletmenizin operasyonel verimliliğini artırmak, maliyetlerinizi optimize etmek ve
-                        rekabet avantajı kazanmanızı sağlamak için en uygun <strong>Workcube ERP</strong>
-                        çözümünü birlikte belirliyor ve hayata geçiriyoruz.</p>
-                </div>
+
             </div>
 
         </div>
@@ -385,6 +403,59 @@
 
 
 
+
+
+
+
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="row mb-5">
+                    <div class="col text-center">
+                        <h2 class="font-weight-bold line-height-2 text-7 mb-1">Danışmanlık Alanlarımız</h2>
+                        <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
+                            çözümler sunuyoruz</span>
+
+                    </div>
+                </div>
+
+                <div class="container pb-5 mb-5">
+                    <div class="row">
+                        @foreach ($advisors->take(3) as $advisor)
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
+                                        alt="{{ $advisor->title }}">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold">{{ $advisor->title }}</h5>
+                                        <p class="card-text">{!! Str::limit($advisor->description, 100) !!}</p>
+                                        @if ($advisor->slug)
+                                            <a href="{{ route('advisors.show', $advisor->slug) }}"
+                                                class="btn btn-primary">Detayları
+                                                Görüntüle</a>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    @if ($advisors->count() > 3)
+                        <div class="row">
+                            <div class="col text-center">
+                                <a href="{{ route('advisors.index') }}"
+                                    class="btn btn-primary btn-outline btn-rounded font-weight-semibold text-3 btn-px-4 btn-py-2">
+                                    Tüm Danışmanlık Alanlarını Görüntüle
+                                </a>
+                            </div>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="container py-5" id="process">
         <div class="row mb-5">
             <div class="col text-center">
@@ -473,58 +544,7 @@
             </div>
         </div>
     </section>
-
     <hr class="mb-5">
-
-
-    <section class="container mb-5">
-        <div class="row">
-            <div class="col">
-                <div class="row mb-5">
-                    <div class="col text-center">
-                        <h2 class="font-weight-bold line-height-2 text-7 mb-1">Danışmanlık Alanlarımız</h2>
-                        <span class="d-block text-color-dark text-5 pb-2 mb-2 opacity-7">Uzman kadromuzla size özel
-                            çözümler sunuyoruz</span>
-
-                    </div>
-                </div>
-
-                <div class="container pb-5 mb-5">
-                    <div class="row">
-                        @foreach ($advisors->take(3) as $advisor)
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <img src="{{ asset('storage/' . $advisor->image) }}" class="card-img-top"
-                                        alt="{{ $advisor->title }}">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold">{{ $advisor->title }}</h5>
-                                        <p class="card-text">{!! Str::limit($advisor->description, 100) !!}</p>
-                                        @if ($advisor->slug)
-                                            <a href="{{ route('advisors.show', $advisor->slug) }}"
-                                                class="btn btn-primary">Detayları
-                                                Görüntüle</a>
-                                        @endif
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-
-                    @if ($advisors->count() > 3)
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="{{ route('advisors.index') }}"
-                                    class="btn btn-primary btn-outline btn-rounded font-weight-semibold text-3 btn-px-4 btn-py-2">
-                                    Tüm Danışmanlık Alanlarını Görüntüle
-                                </a>
-                            </div>
-                        </div>
-                    @endif
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <section class="container mb-5">
         <div class="row">

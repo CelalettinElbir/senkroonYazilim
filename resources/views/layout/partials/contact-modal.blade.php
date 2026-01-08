@@ -11,6 +11,12 @@
 
             <div class="row row-gutter-sm">
                 <div class="form-group col-lg-12 mb-1">
+                    <input type="text" value="" maxlength="100" class="form-control" name="company"
+                        id="company" placeholder="Şirket Adı ">
+                    <div class="invalid-feedback" id="company-error"></div>
+                </div>
+
+                <div class="form-group col-lg-12 mb-1">
                     <input type="text" value="" data-msg-required="Lütfen adınızı girin." maxlength="100"
                         class="form-control" name="name" id="name" required placeholder="Adınız">
                     <div class="invalid-feedback" id="name-error"></div>
@@ -21,11 +27,7 @@
                         placeholder="Telefon Numarası">
                     <div class="invalid-feedback" id="phone-error"></div>
                 </div>
-                <div class="form-group col-lg-12 mb-1">
-                    <input type="text" value="" maxlength="100" class="form-control" name="company" id="company"
-                        placeholder="Şirket Adı (İsteğe bağlı)">
-                    <div class="invalid-feedback" id="company-error"></div>
-                </div>
+
             </div>
             <div class="row row-gutter-sm">
                 <div class="form-group col-lg-12 mb-1">

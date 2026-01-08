@@ -8,6 +8,7 @@ use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
 use App\Models\Advisor;
+use App\Models\Slider;
 
 class Homecontroller extends Controller
 {
@@ -52,8 +53,8 @@ class Homecontroller extends Controller
 
         $advisors = Advisor::all();
 
-
-        return view('home.index',compact('advisors'));
+        $sliders = Slider::getActiveSliders();
+        return view('home.index',compact('advisors', 'sliders'));
     }
 
 
@@ -172,4 +173,14 @@ class Homecontroller extends Controller
             return redirect()->route('contact-us')->with('error', 'Bir hata oluştu: ' . $e->getMessage());
         }
     }
+
+
+    public function whyWorkcube(){
+
+
+        return view('home.WhyWorkcube');
+
+    }
+
+
 }

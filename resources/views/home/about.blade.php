@@ -17,32 +17,83 @@
     <!-- Main Content -->
     <div class="container py-5">
         <!-- Şirket Hikayesi -->
-        <div class="row py-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="row py-2">
+            <div class="col-lg-7  mb-lg-0">
                 <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-                    <h2 class="text-color-primary font-weight-bold text-6 mb-4">Şirket Hikayemiz</h2>
-                    <p class="text-4 mb-4">
-                        Malatya ve çevresinde faaliyet gösteren işletmelerin dijital dönüşüm ihtiyaçlarını
-                        karşılamak amacıyla yola çıktık. ERP danışmanlığı alanındaki derin uzmanlığımızla,
-                        işletmelere stratejik değer katan çözümler sunuyoruz.
+                    <h2 class="text-color-primary font-weight-bold text-6 mb-2">Hakkımızda</h2>
+                    <p class="text-3 mb-4">
+                        Senkroon; ERP danışmanlığı, iş süreçleri ve organizasyon tasarımı, muhasebe & finansal yapılandırma
+                        ve Workcube ERP başta olmak üzere kurumsal yazılım çözümlerine odaklanan, işletmelerin uçtan uca
+                        dönüşümünü hedefleyen bir iş ortağıdır.
                     </p>
-                    <p class="mb-4">
-                        Yerel pazarı yakından tanıyan deneyimli ekibimiz, işletmelerin süreçlerini optimize etmek,
-                        verimliliği artırmak ve rekabet avantajı sağlamak için özel olarak tasarlanmış
-                        ERP danışmanlığı hizmetleri sunmaktadır.
+                    <p class=" text-3 mb-4">
+                        ERP projeleri, süreç ve organizasyon danışmanlığı, muhasebe–finans modellemesi ile Workcube ERP’nin
+                        konumlandırılması ve devreye alınması; ayrıca ihtiyaç duyulan ölçek ve yapılarda Mikro ve Watom
+                        yazılımlarının doğru kurgulanması alanlarında entegre hizmet sunuyoruz.
                     </p>
-                    <p class="mb-4">
-                        Şirketimiz halen <strong>Workcube Malatya Çözüm Ortaklığını</strong> sürdürmektedir.
-                        Müşteri odaklı yaklaşımımız sayesinde her bir işletmenin özgün ihtiyaçlarına uygun
-                        çözümler üretirken, teknolojinin ve yenilikçiliğin gücünü en etkili şekilde kullanmayı
-                        sürdürmekteyiz.
+                    <p class=" text-3 mb-4">
+                        Sahadaki yönetim ve operasyon tecrübemizi analitik bakış açısı ve teknoloji odaklı yaklaşımımızla
+                        birleştirerek; hazır kalıplar yerine kurum kültürünüze ve çalışma biçiminize uygun, size özel iş
+                        modelleri tasarlıyoruz. Amacımız; veriye dayalı karar almanızı sağlayan, güvenilir, ölçülebilir ve
+                        sürdürülebilir bir yönetim altyapısı kurmak; ERP’yi tek başına bir yazılım değil, işinizin
+                        omurgasını güçlendiren stratejik bir araç hâline getirmek.
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-5 mb-5">
                 <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-                    <img src="{{ asset('porto/simages/workcube-about-us.png') }}" class="img-fluid rounded shadow-lg"
+                    <img src="{{ asset('porto/simages/workcube-about-us.png') }}" class="img-fluid mt-5 rounded shadow-lg"
                         alt="Şirket Hikayesi">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Misyon & Vizyon -->
+        <div class="row py-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card  text-white border-0 h-100">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-bullseye  text-primary text-6"></i>
+                        </div>
+                        <h3 class="font-weight-bold text-center ">Misyonumuz</h3>
+                        <p class=" ">
+                            İşletmelerin ERP yatırımlarını doğru konumlandırmasını, iş süreçlerini sadeleştirmesini ve
+                            finansal yapılarını şeffaf, ölçülebilir ve yönetilebilir hale getirmesini sağlamak.
+                        </p>
+                        <p>
+                            Bunu; ERP danışmanlığı, süreç ve organizasyon tasarımı, muhasebe & finansal modelleme ve
+                            Workcube ERP odaklı yazılım çözümlerini – gerektiğinde Mikro ve Watom gibi tamamlayıcı
+                            yazılımlarla birlikte – bütüncül bir mimari altında birleştirerek yapıyoruz.
+                        </p>
+                        <p class="">
+                            Amacımız, sadece yazılım kurmak değil; kurum kültürüyle uyumlu, sürdürülebilir ve içeride
+                            bağımsız şekilde yönetilebilen bir iş modeli teslim etmek ve böylece müşterilerimizin hem
+                            bugünkü ihtiyaçlarını hem de gelecekteki büyüme hedeflerini desteklemektir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card  bg-color-red text-white border-0 h-100">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-eye text-primary text-6"></i>
+                        </div>
+                        <h3 class="font-weight-bold text-center mb-4">Vizyonumuz</h3>
+                        <p class="text-3 ">
+                            Türkiye’de ve bölgemizde; ERP danışmanlığı, iş süreçleri ve finansal yapılandırma denince ilk
+                            akla gelen, özellikle Workcube ERP tabanlı projelerde referans gösterilen çözüm ortağı olmak.
+                        </p>
+
+                        <p>
+                            Şirketleri kişiye bağlı işleyişten çıkarıp; veriye, sürece ve kurumsal yönetişime dayalı
+                            yapılara dönüştüren, karar anlarında güven veren ve veriye dayalı, ikna edici önerileriyle
+                            ayrışan bir marka olmayı hedefliyoruz.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,7 +103,12 @@
             <div class="col-12">
                 <div class="text-center mb-5">
                     <h2 class="text-color-primary font-weight-bold text-6 mb-3">Hizmetlerimiz</h2>
-                    <p class="text-4">İşletmenizin ihtiyaçlarına yönelik kapsamlı çözümler sunuyoruz</p>
+                    <p class="text-4">Türkiye’de ve bölgemizde; ERP danışmanlığı, iş süreçleri ve finansal yapılandırma
+                        denince ilk akla gelen, özellikle Workcube ERP tabanlı projelerde referans gösterilen çözüm ortağı
+                        olmak.</p>
+
+
+
                 </div>
             </div>
 
@@ -209,43 +265,7 @@
             </div>
         </div>
 
-        <!-- Misyon & Vizyon -->
-        <div class="row py-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="card  text-white border-0 h-100">
-                    <div class="card-body p-5">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-bullseye  text-primary text-6"></i>
-                        </div>
-                        <h3 class="font-weight-bold text-center mb-4">Misyonumuz</h3>
-                        <p class="text-3 text-center">
-                            Malatya ve bölgesindeki işletmelere, ERP danışmanlığı alanında uzman yaklaşımımızla
-                            operasyonel mükemmellik kazandırmak. Süreç optimizasyonu, sistem entegrasyonu ve
-                            dijital dönüşüm konularında güvenilir ortağı olmak. Her işletmenin kendine özgü
-                            ihtiyaçlarına uygun, ölçeklenebilir çözümler sunarak bölgesel ekonominin
-                            gelişimine katkıda bulunmak.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6">
-                <div class="card  bg-color-red text-white border-0 h-100">
-                    <div class="card-body p-5">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-eye text-primary text-6"></i>
-                        </div>
-                        <h3 class="font-weight-bold text-center mb-4">Vizyonumuz</h3>
-                        <p class="text-3 text-center">
-                            Doğu Anadolu Bölgesi'nin önde gelen ERP danışmanlık firması olarak,
-                            işletmelerin dijital dönüşüm yolculuğunda tercihi edilen, güvenilir
-                            ve yenilikçi çözüm ortağı konumuna ulaşmak. Bölgesel kalkınmaya
-                            teknoloji köprüsü olarak katkıda bulunmak.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Değerlerimiz ve İlkelerimiz -->
         <div class="row py-5 bg-light rounded">

@@ -7,7 +7,7 @@
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <a href="{{ route('home.index') }}" class="">
                     <img alt="Senkroon Logo" src="{{ asset('porto/simages/senkroon_koyu.png') }}" class="opacity-7 bottom-4 img-fluid mb-4"
-                        height="200" weight="150">
+                        width="250px">
                 </a>
                 <p class="mt-2 mb-2">İş süreçlerinizi dijitalleştirerek verimliliğinizi artırıyor, size özel yazılım ve
                     danışmanlık çözümleri sunuyoruz.</p>

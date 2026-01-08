@@ -3,20 +3,21 @@
 use App\Http\Controllers\AdvisorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
+use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\SectorController;
 
 
 
 
 Route::controller(Homecontroller::class)->group(function () {
     Route::get('/', 'index')->name('home.index');
-    route::get('/hakkimizda', 'about')->name('home.about');
+    Route::get('/hakkimizda', 'about')->name('home.about');
     Route::get('/iletisim', 'contactUs')->name('contact-us');
     Route::post('/iletisim', 'contactUsSubmit')->name('contact-us.submit');
+    Route::get('/neden-workcube', 'whyWorkcube')->name('home.workcube');
+
 });
 
-
-use App\Http\Controllers\ModuleController;
-use App\Http\Controllers\SectorController;
 
 // Birleştirilmiş module route'ları - category ile gruplanmış
 Route::prefix('{category}-modulleri')->where(['category' => 'mikro|workcube'])->group(function () {

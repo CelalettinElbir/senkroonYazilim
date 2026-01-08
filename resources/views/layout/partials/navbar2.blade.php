@@ -5,10 +5,10 @@
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row">
-                        <div class="header-logo">
+                        <div class="">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('porto/simages/senkroonlogo2.png') }}" width="200" height="100"
-                                    alt="senkroon logo" />
+                                <img src="{{ asset('porto/simages/Normal.png') }}" width="250px"
+                                    alt="senkroon logo" class="img-fluid" />
                             </a>
                         </div>
                     </div>

@@ -5,9 +5,9 @@
              <div class="header-row py-2">
                  <div class="header-column">
                      <div class="header-row">
-                         <div class="header-logo mb-0">
+                         <div class=" mb-0">
                              <a href="{{ url('/') }}">
-                                 <img alt="Porto" width="150" height="60"
+                                 <img alt="Porto" width="200" height="100"
                                      src="{{ asset('porto/simages/senkronlogo2.png') }}">
                              </a>
                          </div>
