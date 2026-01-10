@@ -14,6 +14,7 @@ class Module extends Model
         'short_description',
         'content',
         'category',
+        'parent_id',
         'icon',
         'cover_image',
         'meta_title',
@@ -50,5 +51,47 @@ class Module extends Model
     public function getRouteKeyName()
     {
         return 'slug';
+    }
+
+    /**
+     * Üst modül ilişkisi
+     */
+    public function parent()
+    {
+        return $this->belongsTo(Module::class, 'parent_id');
+    }
+
+    /**
+     * Alt modüller ilişkisi
+     */
+    public function children()
+    {
+        return $this->hasMany(Module::class, 'parent_id')
+                    ->where('is_active', true)
+                    ->orderBy('order', 'asc');
+    }
+
+    /**
+     * Tüm alt modüller (pasif olanları da dahil)
+     */
+    public function allChildren()
+    {
+        return $this->hasMany(Module::class, 'parent_id')->orderBy('order', 'asc');
+    }
+
+    /**
+     * Ana modül mü kontrolü
+     */
+    public function isParent()
+    {
+        return is_null($this->parent_id);
+    }
+
+    /**
+     * Alt modül mü kontrolü
+     */
+    public function isChild()
+    {
+        return !is_null($this->parent_id);
     }
 }

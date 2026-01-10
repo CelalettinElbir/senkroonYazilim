@@ -47,6 +47,7 @@ class ModuleController extends Controller
 
         $modules = Module::where('is_active', true)
             ->where('category', $category)
+            ->whereNull('parent_id') // Sadece ana modülleri getir
             ->orderBy('order')
             ->get();
 
@@ -58,7 +59,8 @@ class ModuleController extends Controller
 
     public function show($category, $moduleSlug)
     {
-        $module = Module::where('slug', $moduleSlug)
+        $module = Module::with('children')
+            ->where('slug', $moduleSlug)
             ->where('category', $category)
             ->where('is_active', true)
             ->firstOrFail();

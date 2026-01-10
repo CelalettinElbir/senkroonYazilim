@@ -17,9 +17,23 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+
+
+        // Tüm ERP modül seederlarını çalıştır
+        $this->call([
+            SalesSupplyDistributionSeeder::class,
+            Fab_Seeeder::class,
+            uretim::class,
+            Hr::class,
+            Crm::class,
+            PMS::class,
+            Intranet::class,
+            BPM::class,
+            SUBO::class,
+            BI::class,
+            LMS::class,
         ]);
+
+        $this->command->info('🎉 Tüm ERP modül seederlari başarıyla çalıştırıldı!');
     }
 }

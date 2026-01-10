@@ -18,7 +18,7 @@
                     <div class="card-body p-4">
 
                         <div class="clearfix">
-                            <img src="{{ asset("storage/{$module->cover_image}") }}" alt="{{ $module->title }}"
+                            <img src="{{ asset($module->cover_image) }}" alt="{{ $module->title }}"
                                 class="img-fluid float-start me-3 mb-3"
                                 style="max-width: 45%; height: auto; object-fit: cover;" />
 
@@ -29,6 +29,45 @@
 
                     </div>
                 </div>
+
+                {{-- Alt Modüller Bölümü --}}
+                @if ($module->children->count() > 0)
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-layer-group me-2"></i>Alt Modüller</h4>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="row g-0">
+                                @foreach ($module->children as $childModule)
+                                    <div class="col-md-6 col-lg-4 p-3 border-end border-bottom">
+                                        <div class="d-flex align-items-center h-100">
+                                            @if ($childModule->cover_image)
+                                                <div class="me-3">
+                                                    <img src="{{ asset($childModule->cover_image) }}"
+                                                        alt="{{ $childModule->title }}" width="45" height="45"
+                                                        style="object-fit:contain;">
+
+                                                </div>
+                                            @endif
+                                            <div>
+                                                <h5 class="mb-1">
+                                                    <a href="#" class="text-decoration-none text-dark">
+                                                        {{ $childModule->title }}
+                                                    </a>
+                                                </h5>
+                                                @if ($childModule->short_description)
+                                                    <p class="text-muted mb-0 small">
+                                                        {{ Str::limit($childModule->short_description, 80) }}</p>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                @endif
+
             </div>
         </div>
     </div>
