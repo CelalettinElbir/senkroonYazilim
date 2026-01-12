@@ -7,8 +7,8 @@
                     <div class="header-row">
                         <div class="">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('porto/simages/Normal.png') }}" width="250px"
-                                    alt="senkroon logo" class="img-fluid" />
+                                <img src="{{ asset('porto/simages/Normal.png') }}" width="250px" alt="senkroon logo"
+                                    class="img-fluid" />
                             </a>
                         </div>
                     </div>
@@ -131,62 +131,55 @@
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2">
-                                                                <div class="dropdown-mega-sub-title">Sektörel
-                                                                    Uygulamalar</div>
+
+                                                            <div class="col-lg-4">
+                                                                <div class="dropdown-mega-sub-title">Danışmanlık
+                                                                    Çözümleri</div>
                                                                 <div class="dropdown-mega-sub-nav">
-                                                                    <ul class="list list-unstyled">
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'uretim-odakli-isletmeler') }}">Üretim
-                                                                                Odaklı İşletmeler</a></li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'toptan-ticaret') }}">Toptan
-                                                                                Ticaret</a></li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'perakendecilik') }}">Perakendecilik</a>
-                                                                        </li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'hizmet-sektoru') }}">Hizmet
-                                                                                Sektörü</a></li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'taahhut-sektoru') }}">Taahhüt
-                                                                                Sektörü</a></li>
-                                                                    </ul>
-                                                                    <a href="{{ route('sectors.index') }}"
+
+
+                                                                    <div class="dropdown-mega-sub-nav">
+                                                                        <ul class="list list-unstyled">
+                                                                            <li>
+                                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                                    href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">
+                                                                                    <span>İdari Danışmanlık
+                                                                                        Hizmetleri</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                                    href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">
+
+                                                                                    <span>Raporlama ve Analiz
+                                                                                        Hizmetleri</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                                    href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">
+
+                                                                                    <span>Teknik Destek
+                                                                                        Hizmetleri</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="dropdown-item d-flex align-items-center"
+                                                                                    href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">
+                                                                                    <span>ERP – MRP Proje
+                                                                                        Danışmanlığı</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <a href="{{ url('danismanlik-cozumleri') }}"
                                                                         class="btn btn-link text-decoration-none ps-0">
                                                                         <i class="fas fa-angle-right me-1"></i>
-                                                                        Tüm Sektörel Uygulamalar
+                                                                        Tüm Danışmanlık Çözümleri
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-2">
-                                                                <div class="dropdown-mega-sub-title">&nbsp;</div>
-                                                                <div class="dropdown-mega-sub-nav">
-                                                                    <ul class="list list-unstyled">
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'sivil-toplum') }}">Sivil
-                                                                                Toplum</a></li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'kamu') }}">Kamu</a>
-                                                                        </li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'mobilya') }}">Mobilya</a>
-                                                                        </li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'moda') }}">Moda</a>
-                                                                        </li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'insaat') }}">İnşaat</a>
-                                                                        </li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'maden') }}">Maden</a>
-                                                                        </li>
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('sectors.show', 'kozmetik') }}">Kozmetik</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </li>
@@ -196,7 +189,7 @@
                                         <li class="dropdown d-lg-none">
                                             <a class="nav-link dropdown-toggle"
                                                 href="{{ route('modules.index', 'workcube') }}">
-                                                Ürünler & Çözümler
+                                                Çözümler & Hizmetlerimiz
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <!-- Workcube Çözümleri -->
@@ -215,20 +208,10 @@
                                                         href="{{ route('modules.show', ['workcube', 'insan-kaynaklari-ik']) }}">
                                                         <i class="fas fa-user-tie me-2 text-muted"></i>Workcube HR</a>
                                                 </li>
-                                                {{-- <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', 'pam-fiziki-varlik-tesis-yonetimi-tamir-bakim') }}">
-                                                        <i class="fas fa-tools me-2 text-muted"></i>Workcube PAM</a></li>
-                                                <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', 'proje-yonetim-sistemi') }}">
-                                                        <i class="fas fa-project-diagram me-2 text-muted"></i>Workcube PMS</a></li>
-                                                <li><a class="dropdown-item py-2"
-                                                        href="{{ route('modules.show', 'cms-intranet-icerik-yonetimi') }}">
-                                                        <i class="fas fa-edit me-2 text-muted"></i>Workcube CMS</a></li> --}}
                                                 <li><a class="dropdown-item fw-bold text-primary py-2"
                                                         href="{{ route('modules.index', 'workcube') }}">
                                                         <i class="fas fa-arrow-right me-2"></i>Tüm Workcube
                                                         Çözümleri</a></li>
-
                                                 <li>
                                                     <hr class="dropdown-divider my-2">
                                                 </li>
@@ -252,60 +235,46 @@
                                                         href="{{ route('modules.index', 'mikro') }}">
                                                         <i class="fas fa-arrow-right me-2"></i>Tüm Mikro Çözümleri</a>
                                                 </li>
-
                                                 <li>
                                                     <hr class="dropdown-divider my-2">
                                                 </li>
 
-                                                <!-- Sektörel Uygulamalar -->
+                                                <!-- Danışmanlık Çözümleri -->
+
                                                 <li class="dropdown-header text-primary fw-bold">
-                                                    <i class="fas fa-industry me-1"></i> Sektörel Uygulamalar
+                                                    <i class="fas fa-microchip me-1"></i> Danışmanlık Çözümleri
                                                 </li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'uretim-odakli-isletmeler') }}">
-                                                        <i class="fas fa-cogs me-2 text-muted"></i>Üretim Odaklı
-                                                        İşletmeler</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'toptan-ticaret') }}">
-                                                        <i class="fas fa-warehouse me-2 text-muted"></i>Toptan
-                                                        Ticaret</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'perakendecilik') }}">
-                                                        <i
-                                                            class="fas fa-shopping-cart me-2 text-muted"></i>Perakendecilik</a>
-                                                </li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'hizmet-sektoru') }}">
-                                                        <i class="fas fa-handshake me-2 text-muted"></i>Hizmet
-                                                        Sektörü</a></li>
-                                                {{-- <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'taahhut-sektoru') }}">
-                                                        <i class="fas fa-hard-hat me-2 text-muted"></i>Taahhüt Sektörü</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'sivil-toplum') }}">
-                                                        <i class="fas fa-heart me-2 text-muted"></i>Sivil Toplum</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'kamu') }}">
-                                                        <i class="fas fa-university me-2 text-muted"></i>Kamu</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'mobilya') }}">
-                                                        <i class="fas fa-chair me-2 text-muted"></i>Mobilya</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'moda') }}">
-                                                        <i class="fas fa-tshirt me-2 text-muted"></i>Moda</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'insaat') }}">
-                                                        <i class="fas fa-building me-2 text-muted"></i>İnşaat</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'maden') }}">
-                                                        <i class="fas fa-mountain me-2 text-muted"></i>Maden</a></li>
-                                                <li><a class="dropdown-item py-1"
-                                                        href="{{ route('sectors.show', 'kozmetik') }}">
-                                                        <i class="fas fa-spa me-2 text-muted"></i>Kozmetik</a></li> --}}
+
+                                                    <li><a class="dropdown-item py-2"
+                                                            href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">
+                                                            <i class="fas fa-building-shield me-2 text-muted"></i>İdari Danışmanlık
+                                                            Hizmetleri</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item py-2"
+                                                            href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">
+                                                            <i class="fas fa-chart-pie me-2 text-muted"></i>Raporlama ve Analiz
+                                                            Hizmetleri</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item py-2"
+                                                            href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">
+                                                            <i class="fas fa-headset me-2 text-muted"></i>Teknik Destek
+                                                            Hizmetleri</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item py-2"
+                                                            href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">
+                                                            <i class="fas fa-project-diagram me-2 text-muted"></i>ERP – MRP Proje
+                                                            Danışmanlığı</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider my-2">
+                                                    </li>
+
+
+
                                                 <li><a class="dropdown-item fw-bold text-success py-2"
                                                         href="{{ route('sectors.index') }}">
-                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Sektörel
-                                                        Uygulamalar</a></li>
+                                                        <i class="fas fa-arrow-right me-2"></i>Tüm Danışmanlık
+                                                        Çözümlerimiz</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown d-lg-none">
@@ -340,10 +309,10 @@
 
                                         <!-- Hizmetlerimiz - Mega Menu (Desktop) -->
                                         <li class="dropdown dropdown-mega d-none d-lg-block">
-                                            <a class="nav-link dropdown-toggle"
+                                            {{-- <a class="nav-link dropdown-toggle"
                                                 href="{{ url('danismanlik-cozumleri') }}">
                                                 Hizmetlerimiz
-                                            </a>
+                                            </a> --}}
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <div class="dropdown-mega-content">
