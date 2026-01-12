@@ -18,7 +18,7 @@
                     <div class="card-body p-4">
 
                         <div class="clearfix">
-                            <img src="{{ asset($module->cover_image) }}" alt="{{ $module->title }}"
+                            <img src="{{ asset('storage/' . $module->cover_image) }}" alt="{{ $module->title }}"
                                 class="img-fluid float-start me-3 mb-3"
                                 style="max-width: 45%; height: auto; object-fit: cover;" />
 
