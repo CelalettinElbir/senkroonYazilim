@@ -21,6 +21,7 @@ class Module extends Model
         'meta_description',
         'is_active',
         'order',
+        'extra_description'
     ];
 
     /**

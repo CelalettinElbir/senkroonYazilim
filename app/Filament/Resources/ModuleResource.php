@@ -74,6 +74,10 @@ class ModuleResource extends Resource
                                     ->label('Detay İçeriği')
                                     ->columnSpanFull(),
 
+                                Forms\Components\RichEditor::make('extra_description')
+                                                    ->label('Ekstra Açıklama')
+                                                    ->columnSpanFull(),
+
 
 
                             ])
@@ -161,6 +165,17 @@ class ModuleResource extends Resource
             ->filters([
                 Tables\Filters\TernaryFilter::make('is_active')
                     ->label('Aktiflik'),
+
+                Tables\Filters\TernaryFilter::make('parent_id')
+                    ->label('Parent Durumu')
+                    ->trueLabel('Parent Var')
+                    ->falseLabel('Parent Yok')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('parent_id'),
+                        false: fn($query) => $query->whereNull('parent_id'),
+                    )
+                    ->native(false),
+
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

@@ -48,11 +48,11 @@
                                                         style="object-fit:contain;">
 
                                                 </div>
-                                                @else
+                                            @else
                                                 <div class="me-3">
-                                                    <i class="{{ $childModule->icon ?: 'fas fa-cube' }} fa-3x text-primary"></i>
+                                                    <i
+                                                        class="{{ $childModule->icon ?: 'fas fa-cube' }} fa-3x text-primary"></i>
                                                 </div>
-
                                             @endif
                                             <div>
                                                 <h5 class="mb-1">
@@ -72,6 +72,21 @@
                         </div>
                     </div>
                 @endif
+
+
+                <div class="card mt-4">
+                    <div class="card-body p-4">
+
+                        <div class="text-content">
+                            {!! $module->extra_description !!}
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
 
             </div>
         </div>
