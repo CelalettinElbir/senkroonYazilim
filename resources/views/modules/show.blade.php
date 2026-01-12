@@ -48,6 +48,11 @@
                                                         style="object-fit:contain;">
 
                                                 </div>
+                                                @else
+                                                <div class="me-3">
+                                                    <i class="{{ $childModule->icon ?: 'fas fa-cube' }} fa-3x text-primary"></i>
+                                                </div>
+
                                             @endif
                                             <div>
                                                 <h5 class="mb-1">
