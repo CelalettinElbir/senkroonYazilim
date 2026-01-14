@@ -302,7 +302,6 @@
         <div class="row mb-5">
             <div class="col text-center">
                 <h2 class="font-weight-bold line-height-2 text-7 mb-1">Hizmetlerimiz</h2>
-                <span class="d-block text-color-dark text-5 pb-2 mb-4 opacity-7">Workcube ERP Bayisi</span>
             </div>
         </div>
         <div class="row gx-4 gy-4">
@@ -566,7 +565,7 @@
                             <div class="owl-item active" style="width: 278.667px; margin-right: 10px;">
                                 <div>
                                     <img alt="" class="img-fluid rounded"
-                                        src="{{ asset('porto/simages/protermo.png') }}">
+                                        src="{{ asset('porto/simages/ygz.png') }}">
                                 </div>
                             </div>
                             <div class="owl-item active" style="width: 278.667px; margin-right: 10px;">

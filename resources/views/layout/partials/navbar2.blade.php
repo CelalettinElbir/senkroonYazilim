@@ -245,29 +245,32 @@
                                                     <i class="fas fa-microchip me-1"></i> Danışmanlık Çözümleri
                                                 </li>
 
-                                                    <li><a class="dropdown-item py-2"
-                                                            href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">
-                                                            <i class="fas fa-building-shield me-2 text-muted"></i>İdari Danışmanlık
-                                                            Hizmetleri</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item py-2"
-                                                            href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">
-                                                            <i class="fas fa-chart-pie me-2 text-muted"></i>Raporlama ve Analiz
-                                                            Hizmetleri</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item py-2"
-                                                            href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">
-                                                            <i class="fas fa-headset me-2 text-muted"></i>Teknik Destek
-                                                            Hizmetleri</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item py-2"
-                                                            href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">
-                                                            <i class="fas fa-project-diagram me-2 text-muted"></i>ERP – MRP Proje
-                                                            Danışmanlığı</a>
-                                                    </li>
-                                                    <li>
-                                                        <hr class="dropdown-divider my-2">
-                                                    </li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ url('danismanlik-cozumleri/idari-danismanlik-hizmetleri') }}">
+                                                        <i class="fas fa-building-shield me-2 text-muted"></i>İdari
+                                                        Danışmanlık
+                                                        Hizmetleri</a>
+                                                </li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ url('danismanlik-cozumleri/raporlama-ve-analiz-hizmetleri') }}">
+                                                        <i class="fas fa-chart-pie me-2 text-muted"></i>Raporlama ve
+                                                        Analiz
+                                                        Hizmetleri</a>
+                                                </li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ url('danismanlik-cozumleri/teknik-destek-hizmetleri') }}">
+                                                        <i class="fas fa-headset me-2 text-muted"></i>Teknik Destek
+                                                        Hizmetleri</a>
+                                                </li>
+                                                <li><a class="dropdown-item py-2"
+                                                        href="{{ url('danismanlik-cozumleri/erp-mrp-proje-danismanligi') }}">
+                                                        <i class="fas fa-project-diagram me-2 text-muted"></i>ERP – MRP
+                                                        Proje
+                                                        Danışmanlığı</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider my-2">
+                                                </li>
 
 
 
