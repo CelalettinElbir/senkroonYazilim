@@ -102,8 +102,8 @@
                     <div class="row py-4 mb-5">
                         <div class="col-lg-6 pb-4 pb-lg-0">
 
-                            <p class="text-4-5 pe-lg-2 text-dark font-weight-bold">Polatlar Office, Tecde, Mıhlıdut Sk. A
-                                Blok No: 37/B, 44090 Yeşilyurt/Malatya</p>
+                            <p class="text-4-5 pe-lg-2 text-dark font-weight-bold"> Polatlar Office, Tecde, Mıhlıdut Sk. A Blok No: 37/B<br>
+                                    44090 Kat 1 No:3 Yeşilyurt/Malatya</p>
                             <ul class="list list-unstyled">
                                 <li class="d-flex align-items-center mb-3">
                                     <i
