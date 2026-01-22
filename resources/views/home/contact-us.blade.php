@@ -116,7 +116,7 @@
                                         class="icon icon-phone text-color-dark text-3 font-weight-bold position-relative top-1 me-3-5"></i>
                                     <a href="tel:+905306690444"
                                         class="d-inline-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-4-5">+90
-                                        0530 669 04 44
+                                        530 669 04 44
                                     </a>
                                 </li>
                             </ul>
