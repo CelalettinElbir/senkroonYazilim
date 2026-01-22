@@ -9,8 +9,7 @@
                     <img alt="Senkroon Logo" src="{{ asset('porto/simages/senkroon_koyu.png') }}" class="opacity-7 bottom-4 img-fluid mb-4"
                         width="250px">
                 </a>
-                <p class="mt-2 mb-2">İş süreçlerinizi dijitalleştirerek verimliliğinizi artırıyor, size özel yazılım ve
-                    danışmanlık çözümleri sunuyoruz.</p>
+                <p class="mt-2 mb-2">GÜVEN, BİLGİ VE TEKNOLOJİNİN SENKROON’U</p>
                 {{-- <p class="mb-0"><a href="{{ route('home.about') }}" class="btn-flat btn-xs text-color-light"><strong class="text-2">DAHA FAZLA</strong><i class="fas fa-angle-right p-relative top-1 ps-2"></i></a></p> --}}
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
