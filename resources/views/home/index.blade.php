@@ -50,34 +50,6 @@
                                                     loading="lazy" alt="{{ $slider->title }}">
                                             </div>
 
-                                            <div class="p-absolute bg-dark custom-stamp-1 appear-animation"
-                                                data-appear-animation="blurIn" data-appear-animation-delay="800">
-                                                <div class="rotate-animation">
-                                                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                        <path id="curvedText1" fill="none" stroke="none"
-                                                            d="M 32.550491,148.48008 A -108.15144,-108.15144 0 0 1 140.70194,40.328644 -108.15144,-108.15144 0 0 1 248.85338,148.48008 -108.15144,-108.15144 0 0 1 140.70194,256.63153 -108.15144,-108.15144 0 0 1 32.550491,148.48008 Z" />
-                                                        <text font-size="20" fill="#FFF" letter-spacing="0"
-                                                            font-family="Poppins, Arial, sans-serif" font-weight="semibold">
-                                                            <textPath xlink:href="#curvedText1">SENKROON YAZILIM - WORKCUBE ERP
-                                                                BAAYI - ANKARA - </textPath>
-                                                        </text>
-                                                    </svg>
-                                                </div>
-                                                {{-- <div class="p-absolute transform3dxy-n50 left-50pct top-50pct">
-                                                    <img width="58" height="58" src="{{ asset('') }}" alt="" data-icon
-                                                        data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary p-relative bottom-2 right-3'}" />
-                                                </div> --}}
-                                            </div>
-
-                                            {{-- <div class="p-absolute text-end custom-el-1 appear-animation"
-                                                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                                                <p><mark
-                                                        class="text-dark mark mark-color mark-color-light mark-pos-2 mark-height-50 p-0">100%</mark>
-                                                </p>
-                                                <em class="d-block custom-font-tertiary"><mark
-                                                        class="text-dark mark mark-color mark-color-light mark-pos-2 mark-height-100 p-0">Güvenilir</mark></em>
-                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
