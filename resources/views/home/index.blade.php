@@ -10,10 +10,6 @@
                 @foreach ($sliders as $slider)
                     <div class="owl-item p-relative overflow-hidden {{ $loop->first ? 'active' : '' }}">
                         <div  class=" border-radius-2 p-relative z-index-1 overflow-hidden">
-                            <div class="custom-el-2 custom-pos-1">
-                                <img class="img-fluid opacity-2 opacity-hover-2" src="{{ asset('porto/simages/waves.svg') }}"
-                                    alt="">
-                            </div>
                             <div class="container">
                                 <div class="row justify-content-center align-items-center" style="min-height: 400px;" >
                                     <div class="col-lg-5 text-center text-lg-start px-2 px-lg-4 order-2 order-lg-1">
